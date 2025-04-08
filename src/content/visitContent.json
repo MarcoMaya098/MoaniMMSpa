@@ -1,0 +1,16 @@
+{
+  "title": "Visit",
+  "text": "Get ready for the best day ever.",
+  "section": [
+    {
+      "title": "hours:",
+      "content": "Monday - Friday",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Location",
+      "content": "Av. GuanaJuato 2713. Col. Madero(Cacho), 22040, Tijuana. B.C, Local 3",
+      "icon": "notes.svg"
+    }
+  ]
+}

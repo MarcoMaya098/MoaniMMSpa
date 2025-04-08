@@ -1,0 +1,13 @@
+{
+  "title": "It's time for your favorite getaway",
+  "text": "messages, facials, wraps & Scrubs.",
+  "button": [
+    {
+      "title": "Explore Services"
+    },
+    {
+      "title": "Learn more",
+      "color": "#fff"
+    }
+  ]
+}
