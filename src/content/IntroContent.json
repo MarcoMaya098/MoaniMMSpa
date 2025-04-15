@@ -1,9 +1,9 @@
 {
-  "title": "It's time for your favorite getaway",
-  "text": "messages, facials, wraps & Scrubs.",
+  "title": "titleIntroContent",
+  "text": "titleIntroContentText",
   "button": [
     {
-      "title": "Explore Services"
+      "title": "ExplorerServices"
     },
     {
       "title": "Learn more",

@@ -9,7 +9,7 @@ export const FooterSection = styled("footer")`
 export const Title = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #453E21;
+  color: #F44781;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -44,7 +44,7 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
-  color: #453E21;
+  color: #F44781;
   font-size: 14px;
   width: 70%;
 `;
@@ -69,9 +69,9 @@ export const Large = styled(Link)`
 `;
 
 export const Chat = styled("p")`
-  color: #453E21;
+  color: #F44781;
   max-width: fit-content;
-  border-bottom: 1px solid #453E21;
+  border-bottom: 1px solid #F44781;
   cursor: pointer;
   margin-top: 1rem;
   transition: all 0.3s ease-in-out;
@@ -129,7 +129,7 @@ export const FooterContainer = styled("div")`
 export const Language = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #453E21;
+  color: #F44781;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -139,7 +139,7 @@ export const Language = styled("h4")`
 export const Label = styled("label")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #453E21;
+  color: #F44781;
   display: block;
   margin-bottom: 2rem;
   font-family: "Motiva Sans Bold", serif;

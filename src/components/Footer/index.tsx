@@ -105,19 +105,19 @@ const Footer = ({ t }: { t: TFunction }) => {
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
+                href="https://www.instagram.com/moanispa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 src="instagram.svg"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
+                href="https://www.facebook.com/profile.php?id=61574727437328"
                 src="facebook.svg"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
+                href="https://www.tiktok.com"
                 src="tiktok.svg"
               />
               <SocialLink
-                href="https://medium.com/@lashakakabadze/"
+                href="https://api.whatsapp.com/send?phone=526647790135&text=%C2%A1Buen%20d%C3%ADa!..."
                 src="whatsapp.svg"
               />
             </FooterContainer>

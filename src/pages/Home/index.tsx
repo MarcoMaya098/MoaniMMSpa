@@ -1,16 +1,17 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
+import DescriptionContent from "../../content/DescriptionContent.json";
+import BasicServiceContent from "../../content/BasicServiceContent.json";
+import SpecialServiceContent from "../../content/SpecialServiceContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
-import VisitContent from "../../content/visitContent.json";
+import VisitContent from "../../content/VisitContent.json";
 
 import ContentBlockFour from "../../components/ContentBlockFour";
+import VisitBlock from "../../components/VisitBlock";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
+const DesciptionBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -27,23 +28,23 @@ const Home = () => {
         icon="landing.png"
         id="intro"
       />
-      <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
+      <DesciptionBlock
+        title={DescriptionContent.title}
+        content={DescriptionContent.text}
+        button={DescriptionContent.button}
       />
       <ContentBlock
         direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
+        title={BasicServiceContent.title}
+        content={BasicServiceContent.text}
         // section={AboutContent.section}
         icon="mascarilla.png"
         id="about"
       />
       <ContentBlock
         direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
+        title={SpecialServiceContent.title}
+        content={SpecialServiceContent.text}
         icon="about.png"
         id="mission"
       />
@@ -63,7 +64,7 @@ const Home = () => {
         icon="producto.png"
         id="product"
       />
-      <ContentBlock
+      <VisitBlock
         direction="left"
         title={VisitContent.title}
         content={VisitContent.text}
@@ -71,11 +72,12 @@ const Home = () => {
         icon="visit.png"
         id="visit"
       />
-      <Contact
+      
+      {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
     </Container>
   );
 };

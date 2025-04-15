@@ -1,5 +1,5 @@
 {
-  "About": "Acerca de",
+  "About": "Acerca de Nosotros",
   "Policy": "Politica",
   "Mission": "Misión",
   "Product": "Producto",
@@ -11,10 +11,10 @@
   "Software Principles": "Principios de software",
   "Support Center": "Centro de Apoyo",
   "Customer Support": "Atención al cliente",
-  "Address": "Habla A",
+  "Address": "Dirección",
   "Press": "Prensa",
   "Careers & Culture": "Carreras & cultura",
-  "Language": "Language",
+  "Language": "Lenguaje",
   "Explore": "Explorar",
   "Learn more": "Más información",
   "Get started": "Comenzar",
@@ -24,5 +24,35 @@
   "Name" : "Nombre",
   "Your Name": "Tu nombre",
   "Email" : "Email",
-  "Your Email": "Tu correo electrónico"
+  "Your Email": "Tu correo electrónico",
+  "Services" : "Servicios",
+  "Company" : "Compañía",
+  "SpecialServices": "Servicios Especiales",
+  "BasicServices": "Servicios Basicos",
+  "ExplorerServices": "Explorar Servicios",
+  "titleIntroContent": "Es hora de tus escapadas favoritas",
+  "titleIntroContentText": "Masajes, faciales, exfoliaciones y más.",
+
+
+  "titleDescriptionContent": "La buena salud es un compromiso contigo mismo",
+  "titleDescriptionContentText": "Nuestro compromiso con usted es que utilizaremos nuestras habilidades y experiencia para ayudarlo a conectarse con su increíble yo, descubrir su verdadero yo y ser más seguro y saludable.",
+
+  
+  "titleBasicServiceContent": "Servicios basicos",
+  "titleBasicServiceContentText": "El mejor día de tu semana empieza aquí. Nuestros servicios están diseñados para maximizar tu bienestar, para que te sientas renovado, con energía y listo para afrontar la vida.",
+
+  "titleSpecialServiceContent": "Servicios Speciales",
+  "titleSpecialServiceContentText": "En Moani Spa, nuestro compromiso es promover su salud y bienestar a través de los tratamientos de spa más exclusivos y revitalizantes en instalaciones cómodas y privadas, utilizando equipos de última generación, productos altamente efectivos y personal profesional comprometido a brindar un servicio cálido y personalizado.",
+
+  "titleProductContent": "Productos",
+  "titleProductContentText": "¡Lleva el spa a tu casa! Y disfruta de momento relajantes en tu hogar.",
+
+
+  "titleVisitContent": "Visítanos",
+  "titleVisitContentText": "Prepárate para el mejor día de tu vida.",
+  "visitTitleSectionFirstText": "Horario",
+  "visitTileSectionSecondText": "Ubicación",
+
+  "visitContentSectionFirstTextMF": "Lun - Vie 10:00am - 06:00pm", 
+  "visitContentSectionFirstTextSat": "Sábado 09:00am - 2:00pm"
 }

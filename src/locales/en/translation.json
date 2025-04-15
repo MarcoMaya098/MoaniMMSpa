@@ -24,5 +24,35 @@
   "Name" : "Name",
   "Your Name": "Your Name",
   "Email" : "Email",
-  "Your Email": "Your Email"
+  "Services" : "Services",
+  "Company" : "Company",
+  "Your Email": "Your Email",
+
+  "SpecialServices": "Special Services",
+  "BasicServices": "Basic Services",
+  "ExplorerServices": "Explorer Services",
+  "titleIntroContent": "It's time for your favorite getaway",
+  "titleIntroContentText": "Massages, facials, scrubs and more",
+
+  "titleDescriptionContent": "Good health is a commitment to yourself.",
+  "titleDescriptionContentText": "Our commitment to you is that we will use our skills and experience to help you connect with your incredible self, discover the true you, and be more confident and healthy.",
+
+  "titleBasicServiceContent": "Basic Services",
+  "titleBasicServiceContentText": "The best day of your week starts here. Our services are designed to maximize your well being so you leave feeling refreshed, energized, and ready to take on life.",
+
+  "titleSpecialServiceContent": "Special Services",
+  "titleSpecialServiceContentText": "At Moani Spa, our commitment is to promote your health and well-being through the most exclusive and revitalizing spa treatments in comfortable and private facilities, utilizing state-of-the-art equipment, highly effective products, and a professional staff committed to providing warm and personalized service.",
+
+  "titleProductContent": "Products",
+  "titleProductContentText": "¡Bring the spa into your home! And enjoy relaxing moments at home.",
+
+
+  "titleVisitContent": "Visit us",
+  "titleVisitContentText": "Get ready for the best day ever.",
+  "visitTitleSectionFirstText": "Hours",
+  "visitTileSectionSecondText": "Location",
+
+  "visitContentSectionFirstTextMF": "Mon - Fri 10:00am - 06:00pm", 
+  "visitContentSectionFirstTextSat": "Sat 09:00am - 2:00pm"
 }
+
