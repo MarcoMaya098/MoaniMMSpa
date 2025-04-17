@@ -34,7 +34,7 @@ const ContentBlock = ({
   };
 
   return (
-    <ContentSection style={{ marginBottom: '30px' }}>
+    <ContentSection>
       <Fade direction={direction} triggerOnce>
         <StyledRow
           justify="space-between"
@@ -42,6 +42,9 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
+          <Col lg={11} md={11} sm={12} xs={24}>
+            <SvgIcon src={icon} width="100%" height="100%" />
+          </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>
@@ -101,12 +104,9 @@ const ContentBlock = ({
               )}
             </ContentWrapper>
           </Col>
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
         </StyledRow>
       </Fade>
-    </ContentSection >
+    </ContentSection>
   );
 };
 
