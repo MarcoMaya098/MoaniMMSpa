@@ -11,6 +11,7 @@ import ContactContent from "../../content/ContactContent.json";
 import VisitContent from "../../content/VisitContent.json";
 
 import VisitBlock from "../../components/VisitBlock";
+import IntroContentBlock from "../../components/IntroContentBlock";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const DesciptionBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -22,8 +23,8 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <ContentBlock
-        direction="right"
+      <IntroContentBlock
+        direction="left"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
@@ -58,7 +59,7 @@ const Home = () => {
         icon="producto.png"
         id="product"
       />
-      <hr />
+      <hr id="visit"/>
       <VisitBlock
         direction="left"
         title={VisitContent.title}
@@ -73,7 +74,7 @@ const Home = () => {
         title={MissionContent.title}
         content={MissionContent.text}
         icon="about.png"
-        id="vision"
+        id="mission"
       />
 
       <ContentBlock

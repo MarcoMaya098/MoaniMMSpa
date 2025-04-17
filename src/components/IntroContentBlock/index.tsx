@@ -16,7 +16,7 @@ import {
   ButtonWrapper,
 } from "./styles";
 
-const ContentBlock = ({
+const IntroContentBlock = ({
   icon,
   title,
   content,
@@ -46,7 +46,7 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              {direction === "right" ? (
+              {direction === "left" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
@@ -101,7 +101,7 @@ const ContentBlock = ({
               )}
             </ContentWrapper>
           </Col>
-          <Col lg={11} md={11} sm={12} xs={24}>
+          <Col lg={11} md={11} sm={12} xs={24} style={{ marginTop: '30px' }}>
             <SvgIcon src={icon} width="100%" height="100%" />
           </Col>
         </StyledRow>
@@ -110,4 +110,4 @@ const ContentBlock = ({
   );
 };
 
-export default withTranslation()(ContentBlock);
+export default withTranslation()(IntroContentBlock);
