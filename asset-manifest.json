@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/MoaniMMSpa/static/css/main.37ddbf14.css",
-    "main.js": "/MoaniMMSpa/static/js/main.1adeed17.js",
-    "static/js/623.d2b1ed08.chunk.js": "/MoaniMMSpa/static/js/623.d2b1ed08.chunk.js",
+    "main.js": "/MoaniMMSpa/static/js/main.76ae2d22.js",
+    "static/js/729.9be72bbc.chunk.js": "/MoaniMMSpa/static/js/729.9be72bbc.chunk.js",
     "static/js/676.a089ecd0.chunk.js": "/MoaniMMSpa/static/js/676.a089ecd0.chunk.js",
     "static/js/416.290b8417.chunk.js": "/MoaniMMSpa/static/js/416.290b8417.chunk.js",
     "static/js/538.1a23fdb0.chunk.js": "/MoaniMMSpa/static/js/538.1a23fdb0.chunk.js",
-    "static/js/566.edeb221c.chunk.js": "/MoaniMMSpa/static/js/566.edeb221c.chunk.js",
+    "static/js/566.ac94cb0c.chunk.js": "/MoaniMMSpa/static/js/566.ac94cb0c.chunk.js",
     "static/js/545.0ebc8f04.chunk.js": "/MoaniMMSpa/static/js/545.0ebc8f04.chunk.js",
     "static/js/614.adcaf66e.chunk.js": "/MoaniMMSpa/static/js/614.adcaf66e.chunk.js",
     "index.html": "/MoaniMMSpa/index.html",
     "main.37ddbf14.css.map": "/MoaniMMSpa/static/css/main.37ddbf14.css.map",
-    "main.1adeed17.js.map": "/MoaniMMSpa/static/js/main.1adeed17.js.map",
-    "623.d2b1ed08.chunk.js.map": "/MoaniMMSpa/static/js/623.d2b1ed08.chunk.js.map",
+    "main.76ae2d22.js.map": "/MoaniMMSpa/static/js/main.76ae2d22.js.map",
+    "729.9be72bbc.chunk.js.map": "/MoaniMMSpa/static/js/729.9be72bbc.chunk.js.map",
     "676.a089ecd0.chunk.js.map": "/MoaniMMSpa/static/js/676.a089ecd0.chunk.js.map",
     "416.290b8417.chunk.js.map": "/MoaniMMSpa/static/js/416.290b8417.chunk.js.map",
     "538.1a23fdb0.chunk.js.map": "/MoaniMMSpa/static/js/538.1a23fdb0.chunk.js.map",
-    "566.edeb221c.chunk.js.map": "/MoaniMMSpa/static/js/566.edeb221c.chunk.js.map",
+    "566.ac94cb0c.chunk.js.map": "/MoaniMMSpa/static/js/566.ac94cb0c.chunk.js.map",
     "545.0ebc8f04.chunk.js.map": "/MoaniMMSpa/static/js/545.0ebc8f04.chunk.js.map",
     "614.adcaf66e.chunk.js.map": "/MoaniMMSpa/static/js/614.adcaf66e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37ddbf14.css",
-    "static/js/main.1adeed17.js"
+    "static/js/main.76ae2d22.js"
   ]
 }

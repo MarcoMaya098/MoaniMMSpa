@@ -3,7 +3,7 @@
   padding: 10rem 0 8rem;
 
   @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+    padding: 2rem 0 2rem;
   }
 `,h=(0,o.Ay)("p")`
   margin: 1.5rem 0 2rem 0;
@@ -41,5 +41,5 @@
   button:last-child {
     margin-left: 20px;
   }
-`;var w=t(579);const g=(0,d.C)()((e=>{let{icon:i,title:t,content:d,section:o,button:g,t:u,id:A,direction:b}=e;return(0,w.jsx)(a,{children:(0,w.jsx)(s.zW,{direction:b,triggerOnce:!0,children:(0,w.jsxs)(x,{justify:"space-between",align:"middle",id:A,direction:b,children:[(0,w.jsx)(n.A,{lg:11,md:11,sm:12,xs:24,children:(0,w.jsx)(l.A,{src:i,width:"100%",height:"100%"})}),(0,w.jsx)(n.A,{lg:11,md:11,sm:11,xs:24,children:(0,w.jsxs)(p,{children:[(0,w.jsx)("h6",{children:u(t)}),(0,w.jsx)(h,{children:u(d)}),"right"===b?(0,w.jsx)(y,{children:"object"===typeof g&&g.map(((e,i)=>(0,w.jsx)(c.$,{color:e.color,onClick:()=>(e=>{document.getElementById(e).scrollIntoView({behavior:"smooth"})})(e.toredirect),children:u(e.title)},i)))}):(0,w.jsx)(m,{children:(0,w.jsx)(r.A,{justify:"space-between",children:"object"===typeof o&&o.map(((e,i)=>(0,w.jsxs)(n.A,{span:11,children:[(0,w.jsx)(l.A,{src:e.icon,width:"60px",height:"60px"}),(0,w.jsx)(j,{children:u(e.title)}),(0,w.jsx)(f,{children:u(e.content)})]},i)))})})]})})]})})})}))}}]);
-//# sourceMappingURL=566.edeb221c.chunk.js.map
+`;var w=t(579);const g=(0,d.C)()((e=>{let{icon:i,title:t,content:d,section:o,button:g,t:u,id:A,direction:b}=e;return(0,w.jsx)(a,{children:(0,w.jsx)(s.zW,{direction:b,triggerOnce:!0,children:(0,w.jsxs)(x,{justify:"space-between",align:"middle",id:A,direction:b,children:[(0,w.jsx)(n.A,{lg:11,md:11,sm:11,xs:24,children:(0,w.jsxs)(p,{children:[(0,w.jsx)("h6",{children:u(t)}),(0,w.jsx)(h,{children:u(d)}),"right"===b?(0,w.jsx)(y,{children:"object"===typeof g&&g.map(((e,i)=>(0,w.jsx)(c.$,{color:e.color,onClick:()=>(e=>{document.getElementById(e).scrollIntoView({behavior:"smooth"})})(e.toredirect),children:u(e.title)},i)))}):(0,w.jsx)(m,{children:(0,w.jsx)(r.A,{justify:"space-between",children:"object"===typeof o&&o.map(((e,i)=>(0,w.jsxs)(n.A,{span:11,children:[(0,w.jsx)(l.A,{src:e.icon,width:"60px",height:"60px"}),(0,w.jsx)(j,{children:u(e.title)}),(0,w.jsx)(f,{children:u(e.content)})]},i)))})})]})}),(0,w.jsx)(n.A,{lg:11,md:11,sm:12,xs:24,children:(0,w.jsx)(l.A,{src:i,width:"100%",height:"100%"})})]})})})}))}}]);
+//# sourceMappingURL=566.ac94cb0c.chunk.js.map
