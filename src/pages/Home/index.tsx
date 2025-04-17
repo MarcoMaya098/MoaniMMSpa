@@ -10,7 +10,6 @@ import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import VisitContent from "../../content/VisitContent.json";
 
-import ContentBlockFour from "../../components/ContentBlockFour";
 import VisitBlock from "../../components/VisitBlock";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -52,14 +51,6 @@ const Home = () => {
         id="specialServices"
       />
 
-      {/* <ContentBlockFour
-        direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
-      /> */}
-
       <ContentBlock
         direction="left"
         title={ProductContent.title}
@@ -73,7 +64,7 @@ const Home = () => {
         title={VisitContent.title}
         content={VisitContent.text}
         section={VisitContent.section}
-        icon="visit.png"
+        icon="moani-background.jpeg"
         id="about"
       />
 

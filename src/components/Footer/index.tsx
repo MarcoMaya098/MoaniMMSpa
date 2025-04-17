@@ -106,7 +106,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   width="101px"
                   height="64px"
                 /> */}
-              <Language>{t("Moani")}</Language>
+              <Language>{t("Moani Spa")}</Language>
               </LogoContainer>
             </NavLink>
             <FooterContainer>
