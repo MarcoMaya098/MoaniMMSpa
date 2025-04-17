@@ -52,9 +52,15 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Address")}</Language>
-              <Para>Av. GuanaJuato 2713. </Para>
-              <Para>Col. Madero(Cacho), 22040</Para>
-              <Para>Tijuana, B.C, Local 3</Para>
+              <Para>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Av. GuanaJuato 2713. Col. Madero(Cacho), 22040, Tijuana. B.C, Local 3")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Av. GuanaJuato 2713. Col. Madero(Cacho), 22040, Tijuana. B.C, Local 3
+                </a>
+              </Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>

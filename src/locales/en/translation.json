@@ -2,6 +2,7 @@
   "About": "About",
   "Policy": "Policy",
   "Mission": "Mission",
+  "Vision": "Vision",
   "Product": "Product",
   "Tell us everything": "Tell us everything",
   "Contact": "Contact",
@@ -32,27 +33,31 @@
   "BasicServices": "Basic Services",
   "ExplorerServices": "Explorer Services",
   "titleIntroContent": "It's time for your favorite getaway",
-  "titleIntroContentText": "Massages, facials, scrubs and more",
+  "titleIntroContentText": "Massages, facials, body scrubs, and more—immerse yourself in total relaxation.",
 
   "titleDescriptionContent": "Good health is a commitment to yourself.",
-  "titleDescriptionContentText": "Our commitment to you is that we will use our skills and experience to help you connect with your incredible self, discover the true you, and be more confident and healthy.",
+  "titleDescriptionContentText": "And our promise to you is to use our expertise and care to help you reconnect with your inner self, feel confident, and embrace a healthier, more radiant you.",
 
   "titleBasicServiceContent": "Basic Services",
-  "titleBasicServiceContentText": "The best day of your week starts here. Our services are designed to maximize your well being so you leave feeling refreshed, energized, and ready to take on life.",
+  "titleBasicServiceContentText": "The best part of your week starts here. Our treatments are crafted to enhance your well-being—so you leave feeling refreshed, revitalized, and ready to thrive.",
 
   "titleSpecialServiceContent": "Special Services",
-  "titleSpecialServiceContentText": "At Moani Spa, our commitment is to promote your health and well-being through the most exclusive and revitalizing spa treatments in comfortable and private facilities, utilizing state-of-the-art equipment, highly effective products, and a professional staff committed to providing warm and personalized service.",
+  "titleSpecialServiceContentText":"At Moani Spa, we are dedicated to your wellness. Experience exclusive, rejuvenating treatments in a serene and private environment, featuring advanced technology, high-quality products, and a team that delivers warm, personalized care.",
 
   "titleProductContent": "Products",
-  "titleProductContentText": "¡Bring the spa into your home! And enjoy relaxing moments at home.",
+  "titleProductContentText": "Bring the spa experience home. Discover our range of products designed to help you unwind and enjoy moments of calm, anytime.",
 
 
   "titleVisitContent": "Visit us",
-  "titleVisitContentText": "Get ready for the best day ever.",
+  "titleVisitContentText": "You deserve a perfect day—let it begin at Moani Spa.",
   "visitTitleSectionFirstText": "Hours",
   "visitTileSectionSecondText": "Location",
 
   "visitContentSectionFirstTextMF": "Mon - Fri 10:00am - 06:00pm", 
-  "visitContentSectionFirstTextSat": "Sat 09:00am - 2:00pm"
+  "visitContentSectionFirstTextSat": "Sat 09:00am - 2:00pm",
+
+  "titleMissionContent": "To meet the needs of our patients by promoting physical and mental well-being through personalized therapies, facial and body treatments, using cutting-edge technology and highly trained staff.",
+  "titleVisionContent": "To be a leading company in cosmetology, recognized for providing exceptional service and personalized care that helps our patients achieve their wellness and beauty goals."
+
 }
 

@@ -2,6 +2,9 @@ import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import DescriptionContent from "../../content/DescriptionContent.json";
 import BasicServiceContent from "../../content/BasicServiceContent.json";
+import MissionContent from "../../content/MisionContent.json";
+import VisionContent from "../../content/VisionContent.json";
+
 import SpecialServiceContent from "../../content/SpecialServiceContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
@@ -31,7 +34,7 @@ const Home = () => {
       <DesciptionBlock
         title={DescriptionContent.title}
         content={DescriptionContent.text}
-        button={DescriptionContent.button}
+        // button={DescriptionContent.button}
       />
       <ContentBlock
         direction="left"
@@ -39,14 +42,14 @@ const Home = () => {
         content={BasicServiceContent.text}
         // section={AboutContent.section}
         icon="mascarilla.png"
-        id="about"
+        id="basicServices"
       />
       <ContentBlock
         direction="right"
         title={SpecialServiceContent.title}
         content={SpecialServiceContent.text}
-        icon="about.png"
-        id="mission"
+        icon="mision.png"
+        id="specialServices"
       />
 
       {/* <ContentBlockFour
@@ -64,14 +67,32 @@ const Home = () => {
         icon="producto.png"
         id="product"
       />
+      <hr />
       <VisitBlock
         direction="left"
         title={VisitContent.title}
         content={VisitContent.text}
         section={VisitContent.section}
         icon="visit.png"
-        id="visit"
+        id="about"
       />
+
+      <ContentBlock
+        direction="left"
+        title={MissionContent.title}
+        content={MissionContent.text}
+        icon="about.png"
+        id="vision"
+      />
+
+      <ContentBlock
+        direction="right"
+        title={VisionContent.title}
+        content={VisionContent.text}
+        icon="vision.png"
+        id="vision"
+      />
+      
       
       {/* <Contact
         title={ContactContent.title}

@@ -62,9 +62,9 @@ export const Large = styled(Link)`
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: #F36898;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: #F36898 wavy underline;
   }
 `;
 
@@ -77,8 +77,8 @@ export const Chat = styled("p")`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 1px solid rgb(255, 130, 92);
-    color: rgb(255, 130, 92);
+    border-bottom: 1px solid #F36898;
+    color: #F36898;
   }
 `;
 
@@ -110,7 +110,7 @@ export const FooterContainer = styled("div")`
     width: auto;
 
     a:not(:last-child) {
-      display: none;
+      display: flex;
     }
   }
 
@@ -121,7 +121,7 @@ export const FooterContainer = styled("div")`
     height: 25px;
 
     &:hover {
-      fill: rgb(255, 130, 92);
+      fill: #F36898;
     }
   }
 `;

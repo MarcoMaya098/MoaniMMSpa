@@ -57,6 +57,7 @@ const ContentBlock = ({
                         item: {
                           color?: string;
                           title: string;
+                          toredirect?: string;
                         },
                         id: number
                       ) => {
@@ -64,7 +65,7 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={() => scrollTo(item.toredirect!)}
                           >
                             {t(item.title)}
                           </Button>

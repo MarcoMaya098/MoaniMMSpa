@@ -3,11 +3,13 @@
   "text": "titleIntroContentText",
   "button": [
     {
-      "title": "ExplorerServices"
+      "title": "ExplorerServices",
+      "toredirect" : "basicServices"
     },
     {
       "title": "Learn more",
-      "color": "#fff"
+      "color": "#fff",
+      "toredirect": "about"
     }
   ]
 }
