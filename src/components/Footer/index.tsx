@@ -96,7 +96,7 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row
             justify="space-between"
             align="middle"
-            style={{ paddingTop: "3rem" }}
+            style={{ paddingTop: "1.5rem" }}
           >
             <NavLink to="/">
               <LogoContainer>

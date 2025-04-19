@@ -12,6 +12,7 @@ import VisitContent from "../../content/VisitContent.json";
 
 import VisitBlock from "../../components/VisitBlock";
 import IntroContentBlock from "../../components/IntroContentBlock";
+import ContentBlockReverse from "../../components/ContentBlockReverse";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const DesciptionBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -43,6 +44,7 @@ const Home = () => {
         // section={AboutContent.section}
         icon="mascarilla.png"
         id="basicServices"
+        buttonShowMore={BasicServiceContent.redirect}
       />
       <ContentBlock
         direction="right"
@@ -50,6 +52,7 @@ const Home = () => {
         content={SpecialServiceContent.text}
         icon="mision.png"
         id="specialServices"
+        buttonShowMore={SpecialServiceContent.redirect}
       />
 
       <ContentBlock
@@ -58,6 +61,7 @@ const Home = () => {
         content={ProductContent.text}
         icon="producto.png"
         id="product"
+        buttonShowMore={ProductContent.redirect}
       />
       <hr id="visit"/>
       <VisitBlock
@@ -69,7 +73,7 @@ const Home = () => {
         id="about"
       />
 
-      <ContentBlock
+      <ContentBlockReverse
         direction="left"
         title={MissionContent.title}
         content={MissionContent.text}
@@ -77,7 +81,7 @@ const Home = () => {
         id="mission"
       />
 
-      <ContentBlock
+      <ContentBlockReverse
         direction="right"
         title={VisionContent.title}
         content={VisionContent.text}
@@ -85,12 +89,6 @@ const Home = () => {
         id="vision"
       />
       
-      
-      {/* <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id="contact"
-      /> */}
     </Container>
   );
 };

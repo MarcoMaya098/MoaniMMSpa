@@ -28,6 +28,7 @@
   "Services" : "Services",
   "Company" : "Company",
   "Your Email": "Your Email",
+  "ShowMore": "Show More",
 
   "SpecialServices": "Special Services",
   "BasicServices": "Basic Services",
@@ -49,7 +50,7 @@
 
 
   "titleVisitContent": "Visit us",
-  "titleVisitContentText": "You deserve a perfect day—let it begin at Moani Spa.",
+  "titleVisitContentText": "You deserve a perfect day, let it begin at Moani Spa.",
   "visitTitleSectionFirstText": "Hours",
   "visitTileSectionSecondText": "Location",
 
@@ -57,7 +58,57 @@
   "visitContentSectionFirstTextSat": "Sat 09:00am - 2:00pm",
 
   "titleMissionContent": "To meet the needs of our patients by promoting physical and mental well-being through personalized therapies, facial and body treatments, using cutting-edge technology and highly trained staff.",
-  "titleVisionContent": "To be a leading company in cosmetology, recognized for providing exceptional service and personalized care that helps our patients achieve their wellness and beauty goals."
+  "titleVisionContent": "To be a leading company in cosmetology, recognized for providing exceptional service and personalized care that helps our patients achieve their wellness and beauty goals.",
+
+
+
+  "titleBasicServiceContent2": "Basic Services",
+  "titleBasicServiceContentText2": "Discover our essential services that offer care, relaxation, and visible results. Treatments designed to keep your skin and body healthy every day.",
+
+  "titleSpecialServiceContent2": "Special Services",
+  "titleSpecialServiceContentText2": "Explore advanced treatments with cutting-edge technology to rejuvenate, firm, and transform your skin. A personalized and effective wellness experience.",
+
+  "titleHydraulicFacialContent": "Hydrating Facial",
+  "titleHydraulicFacialContentText": "Restore your skin’s moisture and radiance with our hydrating facial — a refreshing treatment that leaves your face feeling soft, smooth, and rejuvenated.",
+
+  "titlecleanFacialContent": "Deep Cleansing Facial",
+  "titlecleanFacialContentText": "Eliminate impurities and reveal a clearer complexion with our deep cleansing facial. Ideal for purifying your skin and restoring its natural balance.",
+
+  "titleSpecialFacialDermapenContent": "Specialized Facial with Dermapen",
+  "titleSpecialFacialDermapenContentText": "Stimulate collagen and rejuvenate your skin with microneedling technology. This facial targets fine lines, scars, and skin tone for a visibly smoother appearance.",
+
+  "titleSpecialFacialRadioFContent": "Specialized Facial with Radio Frequency",
+  "titleSpecialFacialRadioFContentText": "Experience a tightening effect and improved elasticity with our radio frequency facial — a non-invasive way to lift and refresh your skin.",
+
+  "titleDespigmentFacialContent": "Depigmenting Facial",
+  "titleDespigmentFacialContentText": "Reduce spots and even out your skin tone with our depigmenting treatment. It’s perfect for brightening and restoring radiance to your complexion.",
+
+  "titleAcneFacialContent": "Acne Facial",
+  "titleAcneFacialContentText": "Target breakouts and prevent future blemishes with our acne facial. Designed to cleanse, soothe, and balance acne-prone skin.",
+
+  "titleDermaplaningFacialContent": "Dermaplaning Facial",
+  "titleDermaplaningFacialContentText": "Reveal silky smooth skin instantly with our dermaplaning facial. It exfoliates and removes fine facial hair for a flawless glow.",
+
+  "titlerelaxMassageContent": "Relaxing Massage",
+  "titlerelaxMassageContentText": "Unwind and let go of stress with our deeply relaxing massage — designed to ease tension and promote total well-being.",
+
+  "titleDescMassageContent": "Deep Tissue Massage",
+  "titleDescMassageContentText": "Release muscle knots and chronic tension with our deep tissue massage. Perfect for relieving stiffness and improving circulation.",
+
+  "titleReductMassageContent": "Reducing Massage",
+  "titleReductMassageContentText": "Target localized fat and improve skin texture with our reducing massage. A firm technique that helps contour and tone the body.",
+
+  "titleLNMassageContent": "Lymphatic Drainage Massage",
+  "titleLNMassageContentText": "Support your body’s natural detox process with our gentle lymphatic drainage massage. Helps reduce swelling and improve circulation.",
+
+  "titleHifuContent": "HIFU",
+  "titleHifuContentText": "Achieve a firmer, lifted look with our HIFU (High-Intensity Focused Ultrasound) treatment — a non-surgical solution to tighten and rejuvenate the skin.",
+
+  "titleMorpheusContent": "Morpheus",
+  "titleMorpheusContentText": "Combine microneedling and radiofrequency for dramatic skin renewal with Morpheus — ideal for improving texture, tone, and firmness.",
+
+  "titleDepilationContent": "Diode Laser Hair Removal",
+  "titleDepilationContentText": "Enjoy smooth, hair-free skin with our diode laser hair removal. Safe and effective for long-term hair reduction on all skin types."
 
 }
 

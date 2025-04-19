@@ -12,5 +12,6 @@
       "content": "Styled Components gives you total control over your components.",
       "icon": "notes.svg"
     }
-  ]
+  ],
+  "redirect": "basic-services"
 }

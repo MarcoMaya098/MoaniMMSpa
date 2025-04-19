@@ -28,12 +28,13 @@
   "Services": "Servicios",
   "Company": "Empresa",
   "Your Email": "Tu Correo Electrónico",
+  "ShowMore": "Ver mas",
 
   "SpecialServices": "Servicios Especiales",
   "BasicServices": "Servicios Básicos",
   "ExplorerServices": "Explorar servicios",
   "titleIntroContent": "Es momento de tu escapada favorita",
-  "titleIntroContentText": "Masajes, faciales, exfoliaciones corporales y más—sumérgete en una relajación total.",
+  "titleIntroContentText": "Masajes, faciales, exfoliaciones corporales y más; sumérgete en una relajación total.",
 
   "titleDescriptionContent": "La buena salud es un compromiso contigo mismo.",
   "titleDescriptionContentText": "Y nuestra promesa para ti es usar nuestra experiencia y cuidado para ayudarte a reconectar contigo, sentirte seguro y abrazar una versión más saludable y radiante de ti.",
@@ -48,7 +49,7 @@
   "titleProductContentText": "Lleva la experiencia del spa a tu hogar. Descubre nuestra línea de productos pensados para ayudarte a relajarte y disfrutar de momentos de calma, cuando quieras.",
 
   "titleVisitContent": "Visítanos",
-  "titleVisitContentText": "Te mereces un día perfecto—que comience en Moani Spa.",
+  "titleVisitContentText": "Te mereces un día perfecto, que comience en Moani Spa.",
   "visitTitleSectionFirstText": "Horarios",
   "visitTileSectionSecondText": "Ubicación",
 
@@ -56,7 +57,57 @@
   "visitContentSectionFirstTextSat": "Sáb 09:00am - 2:00pm",
 
   "titleMissionContent": "Satisfacer las necesidades de nuestros pacientes, promoviendo el bienestar físico y mental mediante terapias, tratamientos faciales y corporales personalizados, utilizando tecnología de vanguardia y personal altamente capacitado.",
-  "titleVisionContent": "Ser una empresa líder en cosmetología, reconocida por brindar un servicio excepcional y atención personalizada que ayude a nuestros pacientes a alcanzar sus objetivos de bienestar y belleza."
+  "titleVisionContent": "Ser una empresa líder en cosmetología, reconocida por brindar un servicio excepcional y atención personalizada que ayude a nuestros pacientes a alcanzar sus objetivos de bienestar y belleza.",
 
+
+
+  "titleBasicServiceContent2": "Servicios Básicos",
+  "titleBasicServiceContentText2": "Descubre nuestros servicios esenciales que brindan cuidado, relajación y resultados visibles. Tratamientos diseñados para mantener tu piel y cuerpo saludables día a día.",
+
+  "titleSpecialServiceContent2": "Servicios Especiales",
+  "titleSpecialServiceContentText2": "Explora tratamientos avanzados con tecnología de última generación para rejuvenecer, reafirmar y transformar tu piel. Una experiencia de bienestar personalizada y efectiva.",
+
+
+  "titleHydraulicFacialContent": "Facial Hidratante",
+  "titleHydraulicFacialContentText": "Hidrata profundamente tu piel y restaura su luminosidad natural. Ideal para pieles deshidratadas y apagadas, este tratamiento devuelve la frescura y elasticidad desde la primera sesión.",
+
+  "titlecleanFacialContent": "Facial Limpieza Profunda",
+  "titlecleanFacialContentText": "Elimina impurezas, puntos negros y células muertas. Este facial purifica tu piel en profundidad, dejándola suave, equilibrada y visiblemente más saludable.",
+
+  "titleSpecialFacialDermapenContent": "Facial Especializado con Dermapen",
+  "titleSpecialFacialDermapenContentText": "Estimula la producción de colágeno y mejora la textura de tu piel. El Dermapen es ideal para tratar cicatrices de acné, arrugas y poros abiertos, logrando un rostro más firme y uniforme.",
+
+  "titleSpecialFacialRadioFContent": "Facial Especializado con Radiofrecuencia",
+  "titleSpecialFacialRadioFContentText": "Activa la regeneración celular con tecnología de radiofrecuencia, logrando un efecto tensor y rejuvenecedor inmediato. Perfecto para combatir la flacidez y mejorar la firmeza del rostro.",
+
+  "titleDespigmentFacialContent": "Facial Despigmentante",
+  "titleDespigmentFacialContentText": "Unifica el tono de tu piel y reduce visiblemente manchas oscuras causadas por el sol o el acné. Tu piel se verá más clara, luminosa y uniforme.",
+
+  "titleAcneFacialContent": "Facial Antiacné",
+  "titleAcneFacialContentText": "Especialmente diseñado para pieles grasas o con tendencia acneica. Regula el sebo, reduce la inflamación y previene nuevas lesiones para una piel más limpia y saludable.",
+
+  "titleDermaplaningFacialContent": "Facial Dermaplaning",
+  "titleDermaplaningFacialContentText": "Elimina células muertas y vello fino del rostro con una técnica segura y eficaz. Tu piel lucirá más suave, lisa y con mejor absorción de productos.",
+
+  "titlerelaxMassageContent": "Masaje Relajante",
+  "titlerelaxMassageContentText": "Libérate del estrés con movimientos suaves que calman tu cuerpo y mente. Este masaje es perfecto para quienes buscan un momento de tranquilidad y armonía interior.",
+
+  "titleDescMassageContent": "Masaje Descontracturante",
+  "titleDescMassageContentText": "Alivia tensiones musculares localizadas con técnicas profundas. Ideal para personas con dolor en cuello, espalda o piernas debido al estrés o malas posturas.",
+
+  "titleReductMassageContent": "Masaje Reductivo",
+  "titleReductMassageContentText": "Ayuda a moldear tu figura, mejorar la circulación y reducir la retención de líquidos. Este masaje se enfoca en zonas con acumulación de grasa localizada.",
+
+  "titleLNMassageContent": "Masaje Drenaje Linfático",
+  "titleLNMassageContentText": "Favorece la eliminación de toxinas y mejora la circulación linfática. Es ideal para disminuir la hinchazón, celulitis y mejorar el sistema inmunológico.",
+
+  "titleHifuContent": "HIFU",
+  "titleHifuContentText": "Lifting facial sin cirugía con tecnología de ultrasonido focalizado. Tensa la piel desde las capas más profundas, logrando un efecto rejuvenecedor y duradero.",
+
+  "titleMorpheusContent": "Morpheus",
+  "titleMorpheusContentText": "Revoluciona tu piel con tecnología de microagujas y radiofrecuencia. Estimula la regeneración profunda, mejora textura, tono y firmeza en rostro y cuello.",
+
+  "titleDepilationContent": "Depilación con Diodo",
+  "titleDepilationContentText": "Olvídate del vello con sesiones rápidas, seguras y eficaces. La tecnología láser de diodo garantiza resultados duraderos y confort en cada tratamiento."
 
 }

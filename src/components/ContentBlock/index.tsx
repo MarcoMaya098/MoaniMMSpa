@@ -14,6 +14,8 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  NavLink,
+  ButtonShowMore,
 } from "./styles";
 
 const ContentBlock = ({
@@ -22,6 +24,7 @@ const ContentBlock = ({
   content,
   section,
   button,
+  buttonShowMore,
   t,
   id,
   direction,
@@ -100,6 +103,24 @@ const ContentBlock = ({
                 </ServiceWrapper>
               )}
             </ContentWrapper>
+            {buttonShowMore && (
+              <NavLink to={`/${buttonShowMore}`}>
+                <ButtonShowMore>
+                  <Button>
+                    {t("ShowMore")}
+                    </Button>
+                </ButtonShowMore>
+              </NavLink>
+              )}
+{/* 
+              {buttonShowMore && (
+              <NavLink to={`/${buttonShowMore}`}>
+                {t("ShowMore")}
+              </NavLink>
+              )} */}
+                
+
+              
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />

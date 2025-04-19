@@ -1,4 +1,5 @@
 import { Row } from "antd";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ContentSection = styled("section")`
@@ -6,12 +7,12 @@ export const ContentSection = styled("section")`
   padding: 10rem 0 8rem;
 
   @media only screen and (max-width: 1024px) {
-    padding: 2rem 0 2rem;
+    padding: 1rem 0 1rem;
   }
 `;
 
 export const Content = styled("p")`
-  margin: 1.5rem 0 2rem 0;
+  margin: 1.5rem 0 1rem 0;
 `;
 
 export const StyledRow = styled(Row)`
@@ -24,7 +25,7 @@ export const ContentWrapper = styled("div")`
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
 `;
 
@@ -58,5 +59,31 @@ export const ButtonWrapper = styled("div")`
 
   button:last-child {
     margin-left: 20px;
+  }
+`;
+
+
+
+export const ButtonShowMore = styled("section")`
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0rem 0 1rem;
+  }
+`;
+
+export const NavLink = styled(Link)`
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #15418e;
   }
 `;
