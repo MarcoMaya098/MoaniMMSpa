@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/MoaniMMSpa/static/css/main.37ddbf14.css",
-    "main.js": "/MoaniMMSpa/static/js/main.07e5f012.js",
+    "main.js": "/MoaniMMSpa/static/js/main.c0e7c10c.js",
     "static/js/700.bf7a5acf.chunk.js": "/MoaniMMSpa/static/js/700.bf7a5acf.chunk.js",
-    "static/js/86.42fc35f7.chunk.js": "/MoaniMMSpa/static/js/86.42fc35f7.chunk.js",
-    "static/js/10.1f0d9bbd.chunk.js": "/MoaniMMSpa/static/js/10.1f0d9bbd.chunk.js",
+    "static/js/729.b31aee06.chunk.js": "/MoaniMMSpa/static/js/729.b31aee06.chunk.js",
+    "static/js/10.8fa6a57e.chunk.js": "/MoaniMMSpa/static/js/10.8fa6a57e.chunk.js",
     "static/js/87.8436d80d.chunk.js": "/MoaniMMSpa/static/js/87.8436d80d.chunk.js",
     "static/js/676.c16e96dd.chunk.js": "/MoaniMMSpa/static/js/676.c16e96dd.chunk.js",
     "static/js/416.cd4aa26a.chunk.js": "/MoaniMMSpa/static/js/416.cd4aa26a.chunk.js",
@@ -17,10 +17,10 @@
     "static/js/545.0ebc8f04.chunk.js": "/MoaniMMSpa/static/js/545.0ebc8f04.chunk.js",
     "index.html": "/MoaniMMSpa/index.html",
     "main.37ddbf14.css.map": "/MoaniMMSpa/static/css/main.37ddbf14.css.map",
-    "main.07e5f012.js.map": "/MoaniMMSpa/static/js/main.07e5f012.js.map",
+    "main.c0e7c10c.js.map": "/MoaniMMSpa/static/js/main.c0e7c10c.js.map",
     "700.bf7a5acf.chunk.js.map": "/MoaniMMSpa/static/js/700.bf7a5acf.chunk.js.map",
-    "86.42fc35f7.chunk.js.map": "/MoaniMMSpa/static/js/86.42fc35f7.chunk.js.map",
-    "10.1f0d9bbd.chunk.js.map": "/MoaniMMSpa/static/js/10.1f0d9bbd.chunk.js.map",
+    "729.b31aee06.chunk.js.map": "/MoaniMMSpa/static/js/729.b31aee06.chunk.js.map",
+    "10.8fa6a57e.chunk.js.map": "/MoaniMMSpa/static/js/10.8fa6a57e.chunk.js.map",
     "87.8436d80d.chunk.js.map": "/MoaniMMSpa/static/js/87.8436d80d.chunk.js.map",
     "676.c16e96dd.chunk.js.map": "/MoaniMMSpa/static/js/676.c16e96dd.chunk.js.map",
     "416.cd4aa26a.chunk.js.map": "/MoaniMMSpa/static/js/416.cd4aa26a.chunk.js.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.37ddbf14.css",
-    "static/js/main.07e5f012.js"
+    "static/js/main.c0e7c10c.js"
   ]
 }
