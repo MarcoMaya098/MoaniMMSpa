@@ -93,3 +93,15 @@ export const Span = styled("span")`
     text-decoration: #F36898 wavy underline;
   }
 `;
+
+
+export const NavLink2 = styled(Link)`
+  font-size: 1.2rem;
+  color: #F44781;
+  transition: color 0.2s ease-in;
+  margin: 0.5rem 2rem;
+
+  @media only screen and (max-width: 768px) {
+    margin: 1.25rem 2rem;
+  }
+`;

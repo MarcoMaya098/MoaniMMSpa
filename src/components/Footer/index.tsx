@@ -19,6 +19,7 @@ import {
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
+  Language2,
 } from "./styles";
 
 interface SocialLinkProps {
@@ -64,8 +65,8 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
-              <Large to="/">{t("Services")}</Large>
-              <Large to="/">{t("About")}</Large>
+              <Para>{t("(52) 664 779 0135")}</Para>
+              <Para>{t("moanispa20@gmail.com")}</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
@@ -119,10 +120,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 src="facebook.svg"
               />
               <SocialLink
-                href="https://www.tiktok.com"
+                href="https://www.tiktok.com/@moanispa20?_t=ZS-8w3SgPmuquL&_r=1"
                 src="tiktok.svg"
               />
-              <SocialLink
+              <SocialLink 
                 href="https://api.whatsapp.com/send?phone=526647790135&text=%C2%A1Buen%20d%C3%ADa!..."
                 src="whatsapp.svg"
               />

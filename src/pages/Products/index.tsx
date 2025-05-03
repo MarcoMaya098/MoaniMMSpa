@@ -24,58 +24,14 @@ const Products = () => {
   return (
     <Container>
       <ScrollToTop />
-      {/* <IntroContentBlock
-        direction="left"
-        title={IntroContent.title}
-        content={IntroContent.text}
-        button={IntroContent.button}
-        icon="landing.png"
-        id="intro"
-      /> */}
-      <ContentBlock
-        direction="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="producto.png"
-        id="product"
-        buttonShowMore={DescriptionContent.button}
-      />
-      
-      <ContentBlock
-        direction="right"
-        title={SpecialServiceContent.title}
-        content={SpecialServiceContent.text}
-        icon="mision.png"
-        id="specialServices"
-        buttonShowMore={DescriptionContent.button}
+    
+
+      <DesciptionBlock
+        title="En proceso"
+        content="."
       />
 
       
-      <hr id="visit"/>
-      <VisitBlock
-        direction="left"
-        title={VisitContent.title}
-        content={VisitContent.text}
-        section={VisitContent.section}
-        icon="moani-background.jpeg"
-        id="about"
-      />
-
-      <ContentBlockReverse
-        direction="left"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="about.png"
-        id="mission"
-      />
-
-      <ContentBlockReverse
-        direction="right"
-        title={VisionContent.title}
-        content={VisionContent.text}
-        icon="vision.png"
-        id="vision"
-      />
       
       
       

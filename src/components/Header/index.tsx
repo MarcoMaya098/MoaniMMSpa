@@ -13,17 +13,22 @@ import {
   Label,
   Outline,
   Span,
+  NavLink,
+  NavLink2,
 } from "./styles";
 import { SvgIcon } from "../../common/SvgIcon";
+import { useLocation } from "react-router-dom";
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+  const location = useLocation();
 
   const toggleButton = () => {
     setVisibility(!visible);
   };
 
   const MenuItem = () => {
+    
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
@@ -33,23 +38,26 @@ const Header = ({ t }: { t: TFunction }) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("basicServices")}>
-          <Span>{t("BasicServices")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("specialServices")}>
-          <Span>{t("SpecialServices")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("visit")}
-        >
-          <Span>
-            <Button>{t("About")}</Button>
-          </Span>
-        </CustomNavLinkSmall>
+          <NavLink2 to='/basic-services'>
+            <Span>{t("BasicServices")}</Span>
+          </NavLink2>
+          <NavLink2 to='/special-services'>
+            <Span>{t("SpecialServices")}</Span>
+          </NavLink2>
+          <NavLink2 to='/products'>
+            <Span>{t("Product")}</Span>
+          </NavLink2>
+          {location.pathname === "/" && (
+          <CustomNavLinkSmall
+            style={{ width: "180px" }}
+            onClick={() => scrollTo("visit")}
+          >
+            <Span>
+              <Button>{t("About")}</Button>
+            </Span>
+          </CustomNavLinkSmall>
+        )}
+
       </>
     );
   };

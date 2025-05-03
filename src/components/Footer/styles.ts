@@ -44,7 +44,7 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
-  color: #18216d;
+  color: #F44781;
   font-size: 14px;
   width: 70%;
 `;
@@ -127,6 +127,16 @@ export const FooterContainer = styled("div")`
 
 export const Language = styled("h4")`
   font-size: 22px;
+  text-transform: capitalize;
+  color: #18216d;
+
+  @media screen and (max-width: 414px) {
+    padding: 1.5rem 0;
+  }
+`;
+
+export const Language2 = styled("h6")`
+  font-size: 12px;
   text-transform: capitalize;
   color: #18216d;
 
