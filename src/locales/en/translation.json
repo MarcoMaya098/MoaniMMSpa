@@ -20,95 +20,77 @@
   "Learn more": "Learn more",
   "Get started": "Get started",
   "Submit": "Submit",
-  "Message" : "Message",
+  "Message": "Message",
   "Your Message": "Your Message",
-  "Name" : "Name",
+  "Name": "Name",
   "Your Name": "Your Name",
-  "Email" : "Email",
-  "Services" : "Services",
-  "Company" : "Company",
+  "Email": "Email",
+  "Services": "Services",
+  "Company": "Company",
   "Your Email": "Your Email",
-  "ShowMore": "Show More",
-
+  "ShowMore": "Show more",
   "SpecialServices": "Special Services",
   "BasicServices": "Basic Services",
-  "ExplorerServices": "Explorer Services",
-  "titleIntroContent": "It's time for your favorite getaway",
-  "titleIntroContentText": "Massages, facials, body scrubs, and more—immerse yourself in total relaxation.",
-
+  "ExplorerServices": "Explore Services",
+  "titleIntroContent": "It's time for your favorite escape",
+  "titleIntroContentText": "Massages, facials, body scrubs, and more; immerse yourself in total relaxation.",
   "titleDescriptionContent": "Good health is a commitment to yourself.",
-  "titleDescriptionContentText": "And our promise to you is to use our expertise and care to help you reconnect with your inner self, feel confident, and embrace a healthier, more radiant you.",
-
+  "titleDescriptionContentText": "And our promise to you is to use our expertise and care to help you reconnect with yourself, feel confident, and embrace a healthier, more radiant version of you.",
   "titleBasicServiceContent": "Basic Services",
-  "titleBasicServiceContentText": "The best part of your week starts here. Our treatments are crafted to enhance your well-being—so you leave feeling refreshed, revitalized, and ready to thrive.",
-
+  "titleBasicServiceContentText": "The best part of your week starts here. Our treatments are designed to enhance your well-being—so you leave renewed, revitalized, and ready to shine.",
   "titleSpecialServiceContent": "Special Services",
-  "titleSpecialServiceContentText":"At Moani Spa, we are dedicated to your wellness. Experience exclusive, rejuvenating treatments in a serene and private environment, featuring advanced technology, high-quality products, and a team that delivers warm, personalized care.",
-
+  "titleSpecialServiceContentText": "At Moani Spa, we are dedicated to your well-being. Enjoy exclusive and rejuvenating treatments in a serene and private environment, with cutting-edge technology, high-quality products, and a team that offers warm and personalized attention.",
   "titleProductContent": "Products",
-  "titleProductContentText": "Bring the spa experience home. Discover our range of products designed to help you unwind and enjoy moments of calm, anytime.",
-
-
-  "titleVisitContent": "Visit us",
-  "titleVisitContentText": "You deserve a perfect day, let it begin at Moani Spa.",
+  "titleProductContentText": "Bring the spa experience to your home. Discover our line of products designed to help you relax and enjoy moments of calm, whenever you want.",
+  "titleVisitContent": "Visit Us",
+  "titleVisitContentText": "You deserve a perfect day, starting at Moani Spa.",
   "visitTitleSectionFirstText": "Hours",
   "visitTileSectionSecondText": "Location",
-
-  "visitContentSectionFirstTextMF": "Mon - Fri 10:00am - 06:00pm", 
+  "visitContentSectionFirstTextMF": "Mon - Fri 10:00am - 06:00pm",
   "visitContentSectionFirstTextSat": "Sat 09:00am - 2:00pm",
-
-  "titleMissionContent": "To meet the needs of our patients by promoting physical and mental well-being through personalized therapies, facial and body treatments, using cutting-edge technology and highly trained staff.",
-  "titleVisionContent": "To be a leading company in cosmetology, recognized for providing exceptional service and personalized care that helps our patients achieve their wellness and beauty goals.",
-
-
-
+  "titleMissionContent": "To meet the needs of our clients, promoting physical and mental well-being through personalized therapies, facial and body treatments, using cutting-edge technology and highly trained staff.",
+  "titleVisionContent": "To be a leading company in cosmetology, recognized for providing exceptional service and personalized attention that helps our clients achieve their wellness and beauty goals.",
   "titleBasicServiceContent2": "Basic Services",
-  "titleBasicServiceContentText2": "Discover our essential services that offer care, relaxation, and visible results. Treatments designed to keep your skin and body healthy every day.",
-
+  "titleBasicServiceContentText2": "Discover our essential services that provide care, relaxation, and visible results. Treatments designed to keep your skin and body healthy every day.",
   "titleSpecialServiceContent2": "Special Services",
-  "titleSpecialServiceContentText2": "Explore advanced treatments with cutting-edge technology to rejuvenate, firm, and transform your skin. A personalized and effective wellness experience.",
-
+  "titleSpecialServiceContentText2": "Explore advanced treatments with state-of-the-art technology to rejuvenate, firm, and transform your skin. A personalized and effective wellness experience.",
   "titleHydraulicFacialContent": "Hydrating Facial",
-  "titleHydraulicFacialContentText": "Restore your skin’s moisture and radiance with our hydrating facial — a refreshing treatment that leaves your face feeling soft, smooth, and rejuvenated.",
-
+  "titleHydraulicFacialContentText": "Deeply hydrates your skin and restores its natural glow. Ideal for dehydrated and dull skin, this treatment brings back freshness and elasticity from the first session.",
   "titlecleanFacialContent": "Deep Cleansing Facial",
-  "titlecleanFacialContentText": "Eliminate impurities and reveal a clearer complexion with our deep cleansing facial. Ideal for purifying your skin and restoring its natural balance.",
-
+  "titlecleanFacialContentText": "Removes impurities, blackheads, and dead skin cells. This facial deeply purifies your skin, leaving it soft, balanced, and visibly healthier.",
   "titleSpecialFacialDermapenContent": "Specialized Facial with Dermapen",
-  "titleSpecialFacialDermapenContentText": "Stimulate collagen and rejuvenate your skin with microneedling technology. This facial targets fine lines, scars, and skin tone for a visibly smoother appearance.",
-
-  "titleSpecialFacialRadioFContent": "Specialized Facial with Radio Frequency",
-  "titleSpecialFacialRadioFContentText": "Experience a tightening effect and improved elasticity with our radio frequency facial — a non-invasive way to lift and refresh your skin.",
-
+  "titleSpecialFacialDermapenContentText": "Stimulates collagen production and improves your skin's texture. Dermapen is ideal for treating acne scars, wrinkles, and enlarged pores, achieving a firmer and more even complexion.",
+  "titleSpecialFacialRadioFContent": "Specialized Facial with Radiofrequency",
+  "titleSpecialFacialRadioFContentText": "Activates cellular regeneration with radiofrequency technology, achieving an immediate tightening and rejuvenating effect. Perfect for combating sagging and improving facial firmness.",
   "titleDespigmentFacialContent": "Depigmenting Facial",
-  "titleDespigmentFacialContentText": "Reduce spots and even out your skin tone with our depigmenting treatment. It’s perfect for brightening and restoring radiance to your complexion.",
-
-  "titleAcneFacialContent": "Acne Facial",
-  "titleAcneFacialContentText": "Target breakouts and prevent future blemishes with our acne facial. Designed to cleanse, soothe, and balance acne-prone skin.",
-
+  "titleDespigmentFacialContentText": "Evens out your skin tone and visibly reduces dark spots caused by sun exposure or acne. Your skin will look clearer, more radiant, and uniform.",
+  "titleAcneFacialContent": "Anti-Acne Facial",
+  "titleAcneFacialContentText": "Specifically designed for oily or acne-prone skin. Regulates sebum, reduces inflammation, and prevents new breakouts for cleaner and healthier skin.",
   "titleDermaplaningFacialContent": "Dermaplaning Facial",
-  "titleDermaplaningFacialContentText": "Reveal silky smooth skin instantly with our dermaplaning facial. It exfoliates and removes fine facial hair for a flawless glow.",
-
+  "titleDermaplaningFacialContentText": "Removes dead skin cells and fine facial hair with a safe and effective technique. Your skin will appear smoother, softer, and better absorb products.",
   "titlerelaxMassageContent": "Relaxing Massage",
-  "titlerelaxMassageContentText": "Unwind and let go of stress with our deeply relaxing massage — designed to ease tension and promote total well-being.",
-
-  "titleDescMassageContent": "Deep Tissue Massage",
-  "titleDescMassageContentText": "Release muscle knots and chronic tension with our deep tissue massage. Perfect for relieving stiffness and improving circulation.",
-
+  "titlerelaxMassageContentText": "Release stress with gentle movements that calm your body and mind. This massage is perfect for those seeking a moment of tranquility and inner harmony.",
+  "titleDescMassageContent": "Decontracting Massage",
+  "titleDescMassageContentText": "Relieves localized muscle tension with deep techniques. Ideal for people with neck, back, or leg pain due to stress or poor posture.",
   "titleReductMassageContent": "Reducing Massage",
-  "titleReductMassageContentText": "Target localized fat and improve skin texture with our reducing massage. A firm technique that helps contour and tone the body.",
-
+  "titleReductMassageContentText": "Helps shape your figure, improve circulation, and reduce fluid retention. This massage focuses on areas with localized fat accumulation.",
   "titleLNMassageContent": "Lymphatic Drainage Massage",
-  "titleLNMassageContentText": "Support your body’s natural detox process with our gentle lymphatic drainage massage. Helps reduce swelling and improve circulation.",
-
+  "titleLNMassageContentText": "Promotes toxin elimination and improves lymphatic circulation. It's ideal for reducing swelling, cellulite, and enhancing the immune system.",
   "titleHifuContent": "HIFU",
-  "titleHifuContentText": "Achieve a firmer, lifted look with our HIFU (High-Intensity Focused Ultrasound) treatment — a non-surgical solution to tighten and rejuvenate the skin.",
-
+  "titleHifuContentText": "Non-surgical facial lifting with focused ultrasound technology. Tightens the skin from the deepest layers, achieving a rejuvenating and long-lasting effect.",
   "titleMorpheusContent": "Morpheus",
-  "titleMorpheusContentText": "Combine microneedling and radiofrequency for dramatic skin renewal with Morpheus — ideal for improving texture, tone, and firmness.",
-
-  "titleDepilationContent": "Diode Laser Hair Removal",
-  "titleDepilationContentText": "Enjoy smooth, hair-free skin with our diode laser hair removal. Safe and effective for long-term hair reduction on all skin types."
-
+  "titleMorpheusContentText": "Revolutionize your skin with microneedling and radiofrequency technology. Stimulates deep regeneration, improves texture, tone, and firmness in the face and neck.",
+  "titleDepilationContent": "Diode Hair Removal",
+  "titleDepilationContentText": "Forget about hair with quick, safe, and effective sessions. Diode laser technology guarantees long-lasting results and comfort in each treatment.",
+  "productDSerum": "It is a depigmenting, antioxidant, and sebum-regulating serum. Suitable for all skin types. Helps to reduce spots from PIH, epidermal melasma, solar lentigines, evens skin tone, brightens, and refines skin texture.",
+  "productMSerum": "Facial microbiome. Suitable for all skin types. Helps strengthen the skin barrier during periods of chronosensitivity, promotes the synthesis of vital elements to achieve healthy and strengthened skin.",
+  "productGenesis1": "Day moisturizing cream for normal to dry skin. Helps hydrate the skin, reduces the appearance of spots or pigmentation, and modulates excessive oil secretion.",
+  "productGenesis2": "Day moisturizing cream for normal to dry skin. Helps promote the hydrolipidic balance, improves skin hydration, and moisturizes.",
+  "productYankaC": "Depigmenting cream. Suitable for all skin types. Helps capture free radicals, counteracting harmful effects on the skin, hydrates, delays the appearance of expression lines, lightens, and progressively evens skin tone.",
+  "productAxtaxantina": "Antioxidant gel cream. Suitable for all skin types. Hydrates the skin, contains 8 types of hyaluronic acid, promotes collagen synthesis.",
+  "productPorcelaine50": "(With color) Suitable for all skin types. Helps effectively prevent the appearance of spots and enhances the results of alternative treatments, contains a combination of highly photostable and broad-spectrum chemical sunscreens with antioxidant action.",
+  "productPorcelaine360": "Mousse sunscreen (Without color). Provides antioxidant protection with 5% niacinamide and 1% marine glycogen, counteracting premature aging caused by digital pollution.",
+  "productPorcelaineP30": "(With color) Suitable for all skin types. It is a 100% mineral powder sunscreen, its composition adds extra care to sun protection, thanks to its content of submicron spheres of Astaxanthin.",
+  "productSunSecure50": "(Without color) For hypersensitive skin. Helps with imperfections, evens skin tone, and offers UVB and UVA protection.",
+  "productSunSecureUriage": "For sensitive and sun-intolerant skin. Promises reliable and safe coverage, lightweight finish, it is a mist sunscreen."
 }
-

@@ -7,13 +7,23 @@ const ScrollToTop = () => {
 
   const checkScrollTop = useCallback(() => {
     const offsetFromTop = window.scrollY;
+    const footer = document.querySelector("footer");
 
-    if (!showScroll && offsetFromTop > 350) {
-      setShowScroll(true);
-    } else if (offsetFromTop <= 350) {
-      setShowScroll(false);
+    let shouldShow = offsetFromTop > 350;
+
+    if (footer) {
+      const footerRect = footer.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      const isFooterVisible = footerRect.top < windowHeight;
+
+      if (isFooterVisible) {
+        shouldShow = false;
+      }
     }
-  }, [showScroll]);
+
+    setShowScroll(shouldShow);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", checkScrollTop);
@@ -23,11 +33,9 @@ const ScrollToTop = () => {
   }, [checkScrollTop]);
 
   const scrollUp = () => {
-    const element = document.getElementById("intro") as HTMLDivElement;
-    element.scrollIntoView({
+    window.scrollTo({
+      top: 0,
       behavior: "smooth",
-      block: "end",
-      inline: "nearest",
     });
   };
 

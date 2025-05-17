@@ -1,30 +1,28 @@
 import styled from "styled-components";
 
-export const ScrollUpContainer = styled("div")<{
-  show: boolean;
-}>`
-  padding: 10px;
+export const ScrollUpContainer = styled.div<{ show: boolean }>`
   position: fixed;
+  bottom: 40px;
   right: 30px;
-  bottom: 30px;
-  z-index: 10;
-  cursor: pointer;
-  background: rgb(241, 242, 243);
-  text-align: center;
+  width: 40px;
+  height: 40px;
+  background: rgb(241, 242, 243);  color: white;
+  border-radius: 50%;
+  display: ${({ show }) => (show ? "flex" : "none")};
+  justify-content: center;
   align-items: center;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-  visibility: ${(p) => (p.show ? "visible" : "hidden")};
-  opacity: ${(p) => (p.show ? "1" : "0")};
-  display: flex;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
 
-  &:hover,
-  &:active,
-  &:focus {
+  &:hover {
     background: rgb(224, 224, 224);
   }
 
-  @media screen and (max-width: 1240px) {
-    display: none;
+  @media (max-width: 768px) {
+    right: 20px;
+    bottom: 20px;
+    width: 35px;
+    height: 35px;
   }
 `;
