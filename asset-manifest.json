@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MoaniMMSpa/static/css/main.37ddbf14.css",
-    "main.js": "/MoaniMMSpa/static/js/main.c0e7c10c.js",
+    "main.js": "/MoaniMMSpa/static/js/main.af249d83.js",
     "static/js/700.bf7a5acf.chunk.js": "/MoaniMMSpa/static/js/700.bf7a5acf.chunk.js",
     "static/js/729.b31aee06.chunk.js": "/MoaniMMSpa/static/js/729.b31aee06.chunk.js",
-    "static/js/10.8fa6a57e.chunk.js": "/MoaniMMSpa/static/js/10.8fa6a57e.chunk.js",
+    "static/js/10.28b03bb3.chunk.js": "/MoaniMMSpa/static/js/10.28b03bb3.chunk.js",
     "static/js/87.8436d80d.chunk.js": "/MoaniMMSpa/static/js/87.8436d80d.chunk.js",
     "static/js/676.c16e96dd.chunk.js": "/MoaniMMSpa/static/js/676.c16e96dd.chunk.js",
     "static/js/416.cd4aa26a.chunk.js": "/MoaniMMSpa/static/js/416.cd4aa26a.chunk.js",
-    "static/js/538.1a23fdb0.chunk.js": "/MoaniMMSpa/static/js/538.1a23fdb0.chunk.js",
+    "static/js/538.f07d05fa.chunk.js": "/MoaniMMSpa/static/js/538.f07d05fa.chunk.js",
     "static/js/566.64af5caf.chunk.js": "/MoaniMMSpa/static/js/566.64af5caf.chunk.js",
     "static/js/295.05b0c3db.chunk.js": "/MoaniMMSpa/static/js/295.05b0c3db.chunk.js",
     "static/js/35.22e551e7.chunk.js": "/MoaniMMSpa/static/js/35.22e551e7.chunk.js",
@@ -17,14 +17,14 @@
     "static/js/545.0ebc8f04.chunk.js": "/MoaniMMSpa/static/js/545.0ebc8f04.chunk.js",
     "index.html": "/MoaniMMSpa/index.html",
     "main.37ddbf14.css.map": "/MoaniMMSpa/static/css/main.37ddbf14.css.map",
-    "main.c0e7c10c.js.map": "/MoaniMMSpa/static/js/main.c0e7c10c.js.map",
+    "main.af249d83.js.map": "/MoaniMMSpa/static/js/main.af249d83.js.map",
     "700.bf7a5acf.chunk.js.map": "/MoaniMMSpa/static/js/700.bf7a5acf.chunk.js.map",
     "729.b31aee06.chunk.js.map": "/MoaniMMSpa/static/js/729.b31aee06.chunk.js.map",
-    "10.8fa6a57e.chunk.js.map": "/MoaniMMSpa/static/js/10.8fa6a57e.chunk.js.map",
+    "10.28b03bb3.chunk.js.map": "/MoaniMMSpa/static/js/10.28b03bb3.chunk.js.map",
     "87.8436d80d.chunk.js.map": "/MoaniMMSpa/static/js/87.8436d80d.chunk.js.map",
     "676.c16e96dd.chunk.js.map": "/MoaniMMSpa/static/js/676.c16e96dd.chunk.js.map",
     "416.cd4aa26a.chunk.js.map": "/MoaniMMSpa/static/js/416.cd4aa26a.chunk.js.map",
-    "538.1a23fdb0.chunk.js.map": "/MoaniMMSpa/static/js/538.1a23fdb0.chunk.js.map",
+    "538.f07d05fa.chunk.js.map": "/MoaniMMSpa/static/js/538.f07d05fa.chunk.js.map",
     "566.64af5caf.chunk.js.map": "/MoaniMMSpa/static/js/566.64af5caf.chunk.js.map",
     "295.05b0c3db.chunk.js.map": "/MoaniMMSpa/static/js/295.05b0c3db.chunk.js.map",
     "35.22e551e7.chunk.js.map": "/MoaniMMSpa/static/js/35.22e551e7.chunk.js.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.37ddbf14.css",
-    "static/js/main.c0e7c10c.js"
+    "static/js/main.af249d83.js"
   ]
 }
