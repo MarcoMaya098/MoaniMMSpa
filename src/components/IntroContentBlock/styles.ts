@@ -46,6 +46,13 @@ export const MinPara = styled("p")`
   font-size: 13px;
 `;
 
+export const MaxTitle = styled("h6")`
+
+   @media (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
 export const ButtonWrapper = styled("div")`
   display: flex;
   justify-content: space-between;

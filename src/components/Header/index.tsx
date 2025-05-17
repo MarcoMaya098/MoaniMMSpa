@@ -38,13 +38,18 @@ const Header = ({ t }: { t: TFunction }) => {
     };
     return (
       <>
-          <NavLink2 to='/basic-services'>
+          {location.pathname !== "/" && (
+            <NavLink2 to="/" onClick={() => setVisibility(false)}>
+              <Span>{t("Home")}</Span>
+            </NavLink2>
+          )}
+          <NavLink2 to="/basic-services" onClick={() => setVisibility(false)}>
             <Span>{t("BasicServices")}</Span>
           </NavLink2>
-          <NavLink2 to='/special-services'>
+          <NavLink2 to="/special-services" onClick={() => setVisibility(false)}>
             <Span>{t("SpecialServices")}</Span>
           </NavLink2>
-          <NavLink2 to='/products'>
+          <NavLink2 to="/products" onClick={() => setVisibility(false)}>
             <Span>{t("Product")}</Span>
           </NavLink2>
           {location.pathname === "/" && (

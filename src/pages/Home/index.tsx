@@ -74,7 +74,7 @@ const Home = () => {
       />
 
       <ContentBlockReverse
-        direction="left"
+        direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
         icon="about.png"
@@ -82,7 +82,7 @@ const Home = () => {
       />
 
       <ContentBlockReverse
-        direction="right"
+        direction="left"
         title={VisionContent.title}
         content={VisionContent.text}
         icon="vision.png"

@@ -33,10 +33,18 @@ export const Extra = styled("section")`
   background: rgb(241, 242, 243);
   position: relative;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   padding-bottom: 2rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
+
 
 export const LogoContainer = styled("div")`
   display: flex;
@@ -110,6 +118,7 @@ export const FooterContainer = styled("div")`
     width: auto;
     a:not(:last-child) {
       display: block;
+        margin-right: 15px;
     }
   }
 
@@ -150,12 +159,12 @@ export const Label = styled("label")`
   text-transform: capitalize;
   color: #18216d;
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: "Motiva Sans Bold", serif;
 
   @media screen and (max-width: 414px) {
-    padding: 1.5rem 0;
-    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
   }
 `;
 

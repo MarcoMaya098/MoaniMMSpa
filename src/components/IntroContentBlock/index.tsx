@@ -14,6 +14,7 @@ import {
   MinPara,
   StyledRow,
   ButtonWrapper,
+  MaxTitle,
 } from "./styles";
 
 const IntroContentBlock = ({
@@ -44,7 +45,7 @@ const IntroContentBlock = ({
         >
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <MaxTitle>{t(title)}</MaxTitle>
               <Content>{t(content)}</Content>
               {direction === "left" ? (
                 <ButtonWrapper>

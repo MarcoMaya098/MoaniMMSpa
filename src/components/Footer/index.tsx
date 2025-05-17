@@ -41,7 +41,7 @@ const Footer = ({ t }: { t: TFunction }) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width="40px" height="40px" />
       </a>
     );
   };
@@ -55,7 +55,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Language>{t("Address")}</Language>
               <Para>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Av. GuanaJuato 2713. Col. Madero(Cacho), 22040, Tijuana. B.C, Local 3")}`}
+                  href={`https://maps.app.goo.gl/FsqL4kt3sB2eF8gm8`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -64,9 +64,9 @@ const Footer = ({ t }: { t: TFunction }) => {
               </Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Para>{t("(52) 664 779 0135")}</Para>
-              <Para>{t("moanispa20@gmail.com")}</Para>
+              <Title>{t("Contact")}</Title>
+              <Para>{t("(664) 779 0135")}</Para>
+              <Para>{t("Moanispa20@gmail.com")}</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
@@ -89,6 +89,30 @@ const Footer = ({ t }: { t: TFunction }) => {
                 </LanguageSwitch>
               </LanguageSwitchContainer>
             </Col>
+
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
+            <Title>{t("FollowUs")}</Title>
+
+            <FooterContainer>
+              <SocialLink
+                href="https://www.instagram.com/moanispa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                src="instagram.svg"
+              />
+              <SocialLink
+                href="https://www.facebook.com/profile.php?id=61574727437328"
+                src="facebook.svg"
+              />
+              <SocialLink
+                href="https://www.tiktok.com/@moanispa20?_t=ZS-8w3SgPmuquL&_r=1"
+                src="tiktok.svg"
+              />
+              <SocialLink 
+                href="https://api.whatsapp.com/send?phone=526647790135&text=%C2%A1Buen%20d%C3%ADa!..."
+                src="whatsapp.svg"
+              />
+            </FooterContainer>
+            </Col> */}
+
           </Row>
         </Container>
       </FooterSection>
@@ -101,12 +125,6 @@ const Footer = ({ t }: { t: TFunction }) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                {/* <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                /> */}
               <Language>{t("Moani Spa")}</Language>
               </LogoContainer>
             </NavLink>

@@ -88,18 +88,16 @@ const VisitBlock = ({
                           const content = t(item.content);
                           const content2 = t(item.content2);
                   
-                          // Lógica para detectar si es una dirección (puedes ajustarla)
                           const isAddress = content.includes("Av.") || content.includes("Col.") || content.includes("Tijuana");
                   
                           return (
                             <Col key={id} span={11}>
                               <MinTitle>{t(item.title)}</MinTitle>
                   
-                              {/* Si es dirección, ponerlo como link a Google Maps */}
                               {isAddress ? (
                                 <MinPara>
                                   <a
-                                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content)}`}
+                                    href={`https://maps.app.goo.gl/FsqL4kt3sB2eF8gm8`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
