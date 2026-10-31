@@ -4,8 +4,10 @@ export const colors = {
   pinkHover: "#F36898",
   navy: "#18216d",
   ink: "#4B5070",
-  blush: "#FDEDF3",
-  blushDeep: "#F9D5E2",
+  page: "#FDF2F6",
+  blush: "#FAE1EA",
+  blushDeep: "#F4C7D7",
+  ornament: "#F2B9CC",
   white: "#FFFFFF",
 };
 

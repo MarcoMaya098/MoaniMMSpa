@@ -1,11 +1,28 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Mandala from "../../common/Mandala";
 import { colors, fonts } from "../../styles/colors";
 
 export const FooterSection = styled("footer")`
+  position: relative;
+  overflow: hidden;
   background: ${colors.blush};
   padding: 3.5rem 0 1.5rem;
   text-align: center;
+`;
+
+export const FooterFlower = styled(Mandala)<{ $side: "left" | "right" }>`
+  position: absolute;
+  top: 3rem;
+  ${(p) => p.$side}: 6%;
+  width: 150px;
+  height: 150px;
+  color: ${colors.ornament};
+  pointer-events: none;
+
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 export const LogoLink = styled(Link)`

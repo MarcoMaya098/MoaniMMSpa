@@ -23,6 +23,7 @@ import {
   LanguageSwitchContainer,
   LanguageSwitch,
   Bottom,
+  FooterFlower,
 } from "./styles";
 
 const SOCIAL_LINKS = [
@@ -51,6 +52,8 @@ const Footer = ({ t }: { t: TFunction }) => {
 
   return (
     <FooterSection>
+      <FooterFlower $side="left" />
+      <FooterFlower $side="right" />
       <Container>
         <LogoLink to="/" aria-label="Moani Spa">
           <SvgIcon src="moani.jpg" width="96px" height="96px" />

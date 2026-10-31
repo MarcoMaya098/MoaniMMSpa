@@ -19,7 +19,7 @@ export const Styles = createGlobalStyle`
         padding: 0;
         border: 0;
         outline: 0;
-        background: ${colors.white};
+        background: ${colors.page};
         color: ${colors.ink};
         overflow-x: hidden;
         -webkit-font-smoothing: antialiased;

@@ -8,7 +8,7 @@ export const HeaderSection = styled("header")<{ $scrolled?: boolean }>`
   top: 0;
   z-index: 900;
   padding: ${(p) => (p.$scrolled ? "0.4rem 0" : "0.9rem 0")};
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(253, 242, 246, 0.94);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid ${(p) => (p.$scrolled ? colors.blushDeep : "transparent")};
   transition: padding 0.2s ease-in-out, border-color 0.2s ease-in-out;
