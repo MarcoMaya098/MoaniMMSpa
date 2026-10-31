@@ -8,7 +8,7 @@ import VisionContent from "../../content/VisionContent.json";
 import SpecialServiceContent from "../../content/SpecialServiceContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
-import VisitContent from "../../content/VisitContent.json";
+import VisitContent from "../../content/visitContent.json";
 
 import VisitBlock from "../../components/VisitBlock";
 import IntroContentBlock from "../../components/IntroContentBlock";

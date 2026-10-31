@@ -1,128 +1,55 @@
-import { Row, Col } from "antd";
-import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
-import { Button } from "../../common/Button";
-import { SvgIcon } from "../../common/SvgIcon";
+import { imagePath } from "../../common/SvgIcon";
+import { MAPS_URL, MAP_EMBED_URL } from "../../common/contact";
 import {
   ContentSection,
+  Banner,
+  Title,
   Content,
-  ContentWrapper,
-  ServiceWrapper,
+  Photo,
+  Details,
+  Info,
+  Detail,
   MinTitle,
   MinPara,
-  StyledRow,
-  ButtonWrapper,
+  DirectionsLink,
+  Map,
 } from "./styles";
 
-const VisitBlock = ({
-  icon,
-  title,
-  content,
-  section,
-  button,
-  t,
-  id,
-  direction,
-}: ContentBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
-  return (
-    <ContentSection>
-      <Fade direction={direction} triggerOnce>
-        <StyledRow
-          justify="space-between"
-          align="middle"
-          id={id}
-          direction={direction}
-        >
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
-            <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              {direction === "right" ? (
-                <ButtonWrapper>
-                  {typeof button === "object" &&
-                    button.map(
-                      (
-                        item: {
-                          color?: string;
-                          title: string;
-                        },
-                        id: number
-                      ) => {
-                        return (
-                          <Button
-                            key={id}
-                            color={item.color}
-                            onClick={() => scrollTo("about")}
-                          >
-                            {t(item.title)}
-                          </Button>
-                        );
-                      }
-                    )}
-                </ButtonWrapper>
-              ) : (
-                <ServiceWrapper>
-                  <Row justify="space-between">
-                    {typeof section === "object" &&
-                      section.map(
-                        (
-                          item: {
-                            title: string;
-                            content: string;
-                            content2: string;
-                          },
-                          id: number
-                        ) => {
-                          const content = t(item.content);
-                          const content2 = t(item.content2);
-                  
-                          const isAddress = content.includes("Av.") || content.includes("Col.") || content.includes("Tijuana");
-                  
-                          return (
-                            <Col key={id} span={11}>
-                              <MinTitle>{t(item.title)}</MinTitle>
-                  
-                              {isAddress ? (
-                                <MinPara>
-                                  <a
-                                    href={`https://maps.app.goo.gl/FsqL4kt3sB2eF8gm8`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    {content}
-                                  </a>
-                                </MinPara>
-                              ) : (
-                                <MinPara>{content}</MinPara>
-                              )}
-                  
-                              {/* Segunda línea normal (puedes aplicar la misma lógica si se necesita) */}
-                              {content2 && <MinPara>{content2}</MinPara>}
-                            </Col>
-                          );
-                        }
-                      )}
-                  </Row>
-                </ServiceWrapper>
-              )}
-            </ContentWrapper>
-          </Col>
-        </StyledRow>
-      </Fade>
-    </ContentSection>
-  );
-};
+const VisitBlock = ({ icon, title, content, section, t, id }: ContentBlockProps) => (
+  <ContentSection id={id}>
+    <Banner>
+      <Title>{t(title)}</Title>
+      <Content>{t(content)}</Content>
+    </Banner>
+    <Photo src={imagePath(icon)} alt={t(title)} loading="lazy" />
+    <Details>
+      <Info>
+        {typeof section === "object" &&
+          section.map((item, id) => {
+            const content2 = t(item.content2);
+            return (
+              <Detail key={id}>
+                <MinTitle>{t(item.title)}</MinTitle>
+                <MinPara>{t(item.content)}</MinPara>
+                {content2 && <MinPara>{content2}</MinPara>}
+              </Detail>
+            );
+          })}
+        <DirectionsLink href={MAPS_URL} target="_blank" rel="noopener noreferrer">
+          {t("directions")}
+        </DirectionsLink>
+      </Info>
+      <Map
+        title={t("visitTileSectionSecondText")}
+        src={MAP_EMBED_URL}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </Details>
+  </ContentSection>
+);
 
 export default withTranslation()(VisitBlock);

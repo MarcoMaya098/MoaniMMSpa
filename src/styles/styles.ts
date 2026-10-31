@@ -1,53 +1,43 @@
 import { createGlobalStyle } from "styled-components";
+import { colors, fonts } from "./colors";
 
 export const Styles = createGlobalStyle`
-
-    @font-face {
-        font-family: "Motiva Sans Light";
-        src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "Motiva Sans Bold";
-        src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
-        font-style: normal;
-    }
-
 
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: ${fonts.body};
     }
 
+    section[id],
+    div[id] {
+        scroll-margin-top: 96px;
+    }
 
     body {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: ${colors.white};
+        color: ${colors.ink};
         overflow-x: hidden;
-    }
-
-    a:hover {
-        color: #F44781;
+        -webkit-font-smoothing: antialiased;
     }
 
     input,
     textarea {
         border-radius: 4px;
         border: 0;
-        background: rgb(241, 242, 243);
-        transition: all 0.3s ease-in-out;  
+        background: ${colors.blush};
+        transition: all 0.3s ease-in-out;
         outline: none;
-        width: 100%;  
+        width: 100%;
         padding: 1rem 1.25rem;
 
         :focus-within {
             background: none;
-            box-shadow: #F44781 0px 0px 0px 1px;
+            box-shadow: ${colors.pink} 0px 0px 0px 1px;
         }
     }
 
@@ -57,46 +47,65 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
-        color: #F44781;
-        font-size: 56px;
-        line-height: 1.18;
+        font-family: ${fonts.display};
+        font-weight: 400;
+        color: ${colors.navy};
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
 
         @media only screen and (max-width: 890px) {
-          font-size: 47px;
+          font-size: 40px;
         }
-      
+
         @media only screen and (max-width: 414px) {
           font-size: 32px;
         }
     }
 
     p {
-        color: #F44781;
-        font-size: 21px;        
-        line-height: 1.41;
-    }
-
-    h1 {
-        font-weight: 600;
+        color: ${colors.ink};
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.65;
     }
 
     a {
         text-decoration: none;
         outline: none;
-        color: #F44781;
+        color: ${colors.pink};
 
         :hover {
-            color: #F44781;
+            color: ${colors.pinkHover};
         }
     }
-    
-    img{
+
+    img {
         border-radius: 10px;
     }
 
     *:focus {
         outline: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    [role="button"]:focus-visible {
+        outline: 2px solid ${colors.navy};
+        outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+        }
     }
 
     .about-block-image svg {

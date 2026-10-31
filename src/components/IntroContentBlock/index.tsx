@@ -1,31 +1,33 @@
-import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
-import { SvgIcon } from "../../common/SvgIcon";
+import { imagePath } from "../../common/SvgIcon";
+import { MAPS_URL, WHATSAPP_URL } from "../../common/contact";
 import {
-  ContentSection,
-  Content,
+  HeroSection,
+  HeroPanel,
   ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
-  StyledRow,
-  ButtonWrapper,
   MaxTitle,
+  Content,
+  ButtonWrapper,
+  BookLink,
+  InfoList,
+  Visual,
+  MainPhoto,
+  SecondaryPhoto,
+  Seal,
 } from "./styles";
 
 const IntroContentBlock = ({
   icon,
+  secondaryIcon,
   title,
   content,
-  section,
   button,
   t,
   id,
-  direction,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -35,79 +37,88 @@ const IntroContentBlock = ({
   };
 
   return (
-    <ContentSection>
-      <Fade direction={direction} triggerOnce>
-        <StyledRow
-          justify="space-between"
-          align="middle"
-          id={id}
-          direction={direction}
-        >
-          <Col lg={11} md={11} sm={11} xs={24}>
-            <ContentWrapper>
-              <MaxTitle>{t(title)}</MaxTitle>
-              <Content>{t(content)}</Content>
-              {direction === "left" ? (
-                <ButtonWrapper>
-                  {typeof button === "object" &&
-                    button.map(
-                      (
-                        item: {
-                          color?: string;
-                          title: string;
-                          toredirect?: string;
-                        },
-                        id: number
-                      ) => {
-                        return (
-                          <Button
-                            key={id}
-                            color={item.color}
-                            onClick={() => scrollTo(item.toredirect!)}
-                          >
-                            {t(item.title)}
-                          </Button>
-                        );
-                      }
-                    )}
-                </ButtonWrapper>
-              ) : (
-                <ServiceWrapper>
-                  <Row justify="space-between">
-                    {typeof section === "object" &&
-                      section.map(
-                        (
-                          item: {
-                            title: string;
-                            content: string;
-                            icon: string;
-                          },
-                          id: number
-                        ) => {
-                          return (
-                            <Col key={id} span={11}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
-                            </Col>
-                          );
-                        }
-                      )}
-                  </Row>
-                </ServiceWrapper>
-              )}
-            </ContentWrapper>
-          </Col>
-          <Col lg={11} md={11} sm={12} xs={24} style={{ marginTop: '30px' }}>
-            <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
-        </StyledRow>
-      </Fade>
-    </ContentSection>
+    <HeroSection id={id}>
+      <HeroPanel>
+        <ContentWrapper>
+          <Fade direction="up" triggerOnce cascade damping={0.15}>
+            <MaxTitle>{t(title)}</MaxTitle>
+            <Content>{t(content)}</Content>
+            <ButtonWrapper>
+              <BookLink href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                {t("bookWhatsApp")}
+              </BookLink>
+              {typeof button === "object" &&
+                button.map(
+                  (
+                    item: {
+                      color?: string;
+                      title: string;
+                      toredirect?: string;
+                    },
+                    id: number
+                  ) => {
+                    return (
+                      <Button
+                        key={id}
+                        color={item.color}
+                        onClick={() => scrollTo(item.toredirect!)}
+                      >
+                        {t(item.title)}
+                      </Button>
+                    );
+                  }
+                )}
+            </ButtonWrapper>
+            <InfoList>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" />
+                  <circle cx="12" cy="9.5" r="2.5" />
+                </svg>
+                <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
+                  {t("heroLocation")}
+                </a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8.5" />
+                  <path d="M12 7.5V12l3 2" />
+                </svg>
+                <span>
+                  {t("visitContentSectionFirstTextMF")}
+                  <br />
+                  {t("visitContentSectionFirstTextSat")}
+                </span>
+              </li>
+            </InfoList>
+          </Fade>
+        </ContentWrapper>
+
+        <Visual>
+          <MainPhoto src={imagePath(icon)} alt="" />
+          {secondaryIcon && <SecondaryPhoto src={imagePath(secondaryIcon)} alt="" />}
+          <Seal viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <path
+                id="seal-circle"
+                d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"
+              />
+            </defs>
+            <circle cx="100" cy="100" r="98" />
+            <text>
+              {/* textLength = circumference of the r=78 path, so the phrase closes the ring in any language */}
+              <textPath href="#seal-circle" textLength="488" lengthAdjust="spacing">
+                {t("heroSeal")}
+              </textPath>
+            </text>
+            <path
+              className="leaf"
+              d="M100 78 C 88 90, 88 110, 100 122 C 112 110, 112 90, 100 78 Z M100 82 L100 120"
+            />
+          </Seal>
+        </Visual>
+      </HeroPanel>
+    </HeroSection>
   );
 };
 

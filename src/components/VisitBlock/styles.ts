@@ -1,62 +1,108 @@
-import { Row } from "antd";
 import styled from "styled-components";
+import { colors } from "../../styles/colors";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 3rem 0 4rem;
+`;
 
-  @media only screen and (max-width: 1024px) {
-    padding: 6rem 0 2rem;
+export const Banner = styled("div")`
+  background: ${colors.pink};
+  border-radius: 28px;
+  padding: 4rem 2rem 11rem;
+  text-align: center;
+
+  @media only screen and (max-width: 890px) {
+    padding: 3rem 1.5rem 6rem;
   }
+`;
+
+export const Title = styled("h2")`
+  color: ${colors.white};
+  margin-bottom: 0.75rem;
 `;
 
 export const Content = styled("p")`
-  margin: 1.5rem 0 2rem 0;
+  color: ${colors.white};
+  font-weight: 400;
+  max-width: 46ch;
+  margin: 0 auto;
 `;
 
-export const StyledRow = styled(Row)`
-  flex-direction: ${({ direction }: { direction: string }) =>
-    direction === "left" ? "row" : "row-reverse"};
-`;
+export const Photo = styled("img")`
+  display: block;
+  width: 72%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: -8rem auto 0;
+  border-radius: 4px;
+  border: 8px solid ${colors.white};
 
-export const ContentWrapper = styled("div")`
-  position: relative;
-  max-width: 540px;
-
-  @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+  @media only screen and (max-width: 890px) {
+    width: 90%;
+    margin-top: -4rem;
   }
 `;
 
-export const ServiceWrapper = styled("div")`
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
+export const Details = styled("div")`
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+  width: 72%;
+  margin: 2.5rem auto 0;
+
+  @media only screen and (max-width: 890px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
+  }
 `;
 
-export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
-  padding: 0.5rem 0;
-  text-transform: uppercase;
-  color: #000;
-  font-family: "Motiva Sans Light", sans-serif;
+export const Info = styled("div")`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
+
+export const Detail = styled("div")`
+  border-top: 1px solid ${colors.blushDeep};
+  padding-top: 1rem;
+`;
+
+export const MinTitle = styled("h3")`
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+
+  @media only screen and (max-width: 890px) {
+    font-size: 22px;
+  }
 `;
 
 export const MinPara = styled("p")`
-  font-size: 13px;
+  font-size: 16px;
+  margin-bottom: 0.25rem;
 `;
 
-export const ButtonWrapper = styled("div")`
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
+export const DirectionsLink = styled("a")`
+  align-self: flex-start;
+  padding: 11px 24px;
+  border-radius: 999px;
+  border: 1px solid ${colors.pink};
+  color: ${colors.navy};
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-  @media screen and (min-width: 1024px) {
-    max-width: 80%;
+  &:hover {
+    background: ${colors.pink};
+    color: ${colors.white};
   }
+`;
 
-  button:last-child {
-    margin-left: 20px;
-  }
+export const Map = styled("iframe")`
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  background: ${colors.blush};
 `;

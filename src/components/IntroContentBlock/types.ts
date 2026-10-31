@@ -1,6 +1,7 @@
 import { TFunction } from "react-i18next";
 export interface ContentBlockProps {
   icon: string;
+  secondaryIcon?: string;
   title: string;
   content: string;
   section?: {

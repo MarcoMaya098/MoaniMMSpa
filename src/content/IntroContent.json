@@ -4,12 +4,8 @@
   "button": [
     {
       "title": "ExplorerServices",
-      "toredirect" : "basicServices"
-    },
-    {
-      "title": "Learn more",
       "color": "#fff",
-      "toredirect": "visit"
+      "toredirect": "services"
     }
   ]
 }

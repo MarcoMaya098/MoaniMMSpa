@@ -1,155 +1,115 @@
-import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
+import i18n from "i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
-
-import i18n from "i18next";
+import {
+  ADDRESS,
+  EMAIL,
+  MAPS_URL,
+  PHONE_LABEL,
+  PHONE_URL,
+  WHATSAPP_URL,
+} from "../../common/contact";
 import {
   FooterSection,
-  Title,
+  LogoLink,
+  Nav,
   NavLink,
-  Extra,
-  LogoContainer,
+  Columns,
+  Column,
+  Title,
   Para,
-  Large,
-  Chat,
-  Empty,
-  FooterContainer,
-  Language,
-  Label,
-  LanguageSwitch,
+  Socials,
   LanguageSwitchContainer,
-  Language2,
+  LanguageSwitch,
+  Bottom,
 } from "./styles";
 
-interface SocialLinkProps {
-  href: string;
-  src: string;
-}
+const SOCIAL_LINKS = [
+  {
+    href: "https://www.instagram.com/moanispa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    src: "instagram.svg",
+    label: "Instagram",
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=61574727437328",
+    src: "facebook.svg",
+    label: "Facebook",
+  },
+  {
+    href: "https://www.tiktok.com/@moanispa20?_t=ZS-8w3SgPmuquL&_r=1",
+    src: "tiktok.svg",
+    label: "TikTok",
+  },
+  { href: WHATSAPP_URL, src: "whatsapp.svg", label: "WhatsApp" },
+];
 
 const Footer = ({ t }: { t: TFunction }) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };
 
-  const SocialLink = ({ href, src }: SocialLinkProps) => {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        key={src}
-        aria-label={src}
-      >
-        <SvgIcon src={src} width="40px" height="40px" />
-      </a>
-    );
-  };
-
   return (
-    <>
-      <FooterSection>
-        <Container>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Address")}</Language>
-              <Para>
-                <a
-                  href={`https://maps.app.goo.gl/FsqL4kt3sB2eF8gm8`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Av. GuanaJuato 2713. Col. Madero(Cacho), 22040, Tijuana. B.C, Local 3
-                </a>
-              </Para>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Contact")}</Title>
-              <Para>{t("(664) 779 0135")}</Para>
-              <Para>{t("Moanispa20@gmail.com")}</Para>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
-            </Col>
+    <FooterSection>
+      <Container>
+        <LogoLink to="/" aria-label="Moani Spa">
+          <SvgIcon src="moani.jpg" width="96px" height="96px" />
+        </LogoLink>
 
-            {/* <Col lg={8} md={8} sm={12} xs={12}>
-            <Title>{t("FollowUs")}</Title>
+        <Nav>
+          <NavLink to="/">{t("Home")}</NavLink>
+          <NavLink to="/basic-services">{t("BasicServices")}</NavLink>
+          <NavLink to="/special-services">{t("SpecialServices")}</NavLink>
+          <NavLink to="/products">{t("Product")}</NavLink>
+        </Nav>
 
-            <FooterContainer>
-              <SocialLink
-                href="https://www.instagram.com/moanispa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                src="instagram.svg"
-              />
-              <SocialLink
-                href="https://www.facebook.com/profile.php?id=61574727437328"
-                src="facebook.svg"
-              />
-              <SocialLink
-                href="https://www.tiktok.com/@moanispa20?_t=ZS-8w3SgPmuquL&_r=1"
-                src="tiktok.svg"
-              />
-              <SocialLink 
-                href="https://api.whatsapp.com/send?phone=526647790135&text=%C2%A1Buen%20d%C3%ADa!..."
-                src="whatsapp.svg"
-              />
-            </FooterContainer>
-            </Col> */}
+        <Columns>
+          <Column>
+            <Title>{t("Address")}</Title>
+            <Para>
+              <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
+                {ADDRESS}
+              </a>
+            </Para>
+          </Column>
+          <Column>
+            <Title>{t("Contact")}</Title>
+            <Para>
+              <a href={PHONE_URL}>{PHONE_LABEL}</a>
+            </Para>
+            <Para>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            </Para>
+          </Column>
+          <Column>
+            <Title>{t("visitTitleSectionFirstText")}</Title>
+            <Para>{t("visitContentSectionFirstTextMF")}</Para>
+            <Para>{t("visitContentSectionFirstTextSat")}</Para>
+          </Column>
+        </Columns>
 
-          </Row>
-        </Container>
-      </FooterSection>
-      <Extra>
-        <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "1.5rem" }}
-          >
-            <NavLink to="/">
-              <LogoContainer>
-              <Language>{t("Moani Spa")}</Language>
-              </LogoContainer>
-            </NavLink>
-            <FooterContainer>
-              <SocialLink
-                href="https://www.instagram.com/moanispa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                src="instagram.svg"
-              />
-              <SocialLink
-                href="https://www.facebook.com/profile.php?id=61574727437328"
-                src="facebook.svg"
-              />
-              <SocialLink
-                href="https://www.tiktok.com/@moanispa20?_t=ZS-8w3SgPmuquL&_r=1"
-                src="tiktok.svg"
-              />
-              <SocialLink 
-                href="https://api.whatsapp.com/send?phone=526647790135&text=%C2%A1Buen%20d%C3%ADa!..."
-                src="whatsapp.svg"
-              />
-            </FooterContainer>
-          </Row>
-        </Container>
-      </Extra>
-    </>
+        <Socials>
+          {SOCIAL_LINKS.map(({ href, src, label }) => (
+            <a key={src} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+              <SvgIcon src={src} width="28px" height="28px" />
+            </a>
+          ))}
+        </Socials>
+
+        <Bottom>
+          <span>© {new Date().getFullYear()} Moani Spa</span>
+          <LanguageSwitchContainer>
+            <span>{t("Language")}</span>
+            <LanguageSwitch type="button" onClick={() => handleChange("es")} aria-label="Español">
+              <SvgIcon src="spain.svg" width="24px" height="24px" />
+            </LanguageSwitch>
+            <LanguageSwitch type="button" onClick={() => handleChange("en")} aria-label="English">
+              <SvgIcon src="united-states.svg" width="24px" height="24px" />
+            </LanguageSwitch>
+          </LanguageSwitchContainer>
+        </Bottom>
+      </Container>
+    </FooterSection>
   );
 };
 
