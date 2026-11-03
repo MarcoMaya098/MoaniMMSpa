@@ -1,10 +1,10 @@
-import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { imagePath } from "../../common/SvgIcon";
 import { MAPS_URL, WHATSAPP_URL } from "../../common/contact";
+import { revealDelay } from "../../common/Reveal";
 import {
   HeroSection,
   HeroPanel,
@@ -40,58 +40,56 @@ const IntroContentBlock = ({
     <HeroSection id={id}>
       <HeroPanel>
         <ContentWrapper>
-          <Fade direction="up" triggerOnce cascade damping={0.15}>
-            <MaxTitle>{t(title)}</MaxTitle>
-            <Content>{t(content)}</Content>
-            <ButtonWrapper>
-              <BookLink href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                {t("bookWhatsApp")}
-              </BookLink>
-              {typeof button === "object" &&
-                button.map(
-                  (
-                    item: {
-                      color?: string;
-                      title: string;
-                      toredirect?: string;
-                    },
-                    id: number
-                  ) => {
-                    return (
-                      <Button
-                        key={id}
-                        color={item.color}
-                        onClick={() => scrollTo(item.toredirect!)}
-                      >
-                        {t(item.title)}
-                      </Button>
-                    );
-                  }
-                )}
-            </ButtonWrapper>
-            <InfoList>
-              <li>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" />
-                  <circle cx="12" cy="9.5" r="2.5" />
-                </svg>
-                <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
-                  {t("heroLocation")}
-                </a>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <circle cx="12" cy="12" r="8.5" />
-                  <path d="M12 7.5V12l3 2" />
-                </svg>
-                <span>
-                  {t("visitContentSectionFirstTextMF")}
-                  <br />
-                  {t("visitContentSectionFirstTextSat")}
-                </span>
-              </li>
-            </InfoList>
-          </Fade>
+          <MaxTitle data-reveal>{t(title)}</MaxTitle>
+          <Content data-reveal style={revealDelay(120)}>{t(content)}</Content>
+          <ButtonWrapper data-reveal style={revealDelay(240)}>
+            <BookLink href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              {t("bookWhatsApp")}
+            </BookLink>
+            {typeof button === "object" &&
+              button.map(
+                (
+                  item: {
+                    color?: string;
+                    title: string;
+                    toredirect?: string;
+                  },
+                  id: number
+                ) => {
+                  return (
+                    <Button
+                      key={id}
+                      color={item.color}
+                      onClick={() => scrollTo(item.toredirect!)}
+                    >
+                      {t(item.title)}
+                    </Button>
+                  );
+                }
+              )}
+          </ButtonWrapper>
+          <InfoList data-reveal style={revealDelay(360)}>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" />
+                <circle cx="12" cy="9.5" r="2.5" />
+              </svg>
+              <a href={MAPS_URL} target="_blank" rel="noopener noreferrer">
+                {t("heroLocation")}
+              </a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M12 7.5V12l3 2" />
+              </svg>
+              <span>
+                {t("visitContentSectionFirstTextMF")}
+                <br />
+                {t("visitContentSectionFirstTextSat")}
+              </span>
+            </li>
+          </InfoList>
         </ContentWrapper>
 
         <Visual>

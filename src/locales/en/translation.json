@@ -108,5 +108,10 @@
   "bookStep1": "Message us on WhatsApp or give us a call.",
   "bookStep2": "Choose your treatment and a time that suits you.",
   "bookStep3": "Arrive a few minutes early and relax.",
-  "whatsappFab": "Message us on WhatsApp"
+  "whatsappFab": "Message us on WhatsApp",
+  "facialsGroup": "Facials",
+  "massagesGroup": "Massages",
+  "productsHint": "Drag to explore and hover over a product to see its description.",
+  "carouselPrev": "Previous",
+  "carouselNext": "Next"
 }

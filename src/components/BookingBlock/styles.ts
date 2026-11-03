@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors, fonts } from "../../styles/colors";
+import { lift } from "../../styles/motion";
 
 export const Section = styled("section")`
   display: grid;
@@ -116,7 +117,7 @@ const pill = css`
   border-radius: 999px;
   padding: 13px 28px;
   font-weight: 500;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  ${lift}
 `;
 
 export const PrimaryLink = styled("a")`

@@ -10,6 +10,8 @@ export const StyledContainer = styled("div")<{
   margin-left: auto;
   padding: 0 60px;
   overflow: hidden;
+  /* clip, unlike hidden, doesn't make a scroll container, so sticky children (GroupNav) still stick. */
+  overflow: clip;
   border-top: ${(p) => (p.border ? "1px solid #CDD1D4" : "")};
 
   @media only screen and (max-width: 1024px) {

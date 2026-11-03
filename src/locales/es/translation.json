@@ -108,5 +108,10 @@
   "bookStep1": "Escríbenos por WhatsApp o llámanos.",
   "bookStep2": "Elige tu tratamiento y el horario que prefieras.",
   "bookStep3": "Llega unos minutos antes y relájate.",
-  "whatsappFab": "Escríbenos por WhatsApp"
+  "whatsappFab": "Escríbenos por WhatsApp",
+  "facialsGroup": "Faciales",
+  "massagesGroup": "Masajes",
+  "productsHint": "Arrastra para explorar y pasa el cursor sobre un producto para ver su descripción.",
+  "carouselPrev": "Anterior",
+  "carouselNext": "Siguiente"
 }

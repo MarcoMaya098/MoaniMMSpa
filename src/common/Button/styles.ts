@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors, fonts } from "../../styles/colors";
+import { lift } from "../../styles/motion";
 
 export const StyledButton = styled("button")<{ color?: string }>`
   background: ${(p) => p.color || colors.pink};
@@ -15,8 +16,7 @@ export const StyledButton = styled("button")<{ color?: string }>`
   cursor: pointer;
   margin-top: 0.625rem;
   max-width: 220px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
+  ${lift}
 
   &:hover,
   &:active {

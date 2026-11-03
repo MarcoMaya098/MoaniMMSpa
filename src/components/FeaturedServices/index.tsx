@@ -1,11 +1,13 @@
 import { withTranslation, TFunction } from "react-i18next";
 import { imagePath } from "../../common/SvgIcon";
+import { revealDelay } from "../../common/Reveal";
 import {
   Section,
   Heading,
   Intro,
   Grid,
   Card,
+  PhotoFrame,
   Photo,
   CardTitle,
   CardText,
@@ -29,12 +31,14 @@ interface FeaturedServicesProps {
 
 const FeaturedServices = ({ title, content, items, id, t }: FeaturedServicesProps) => (
   <Section id={id}>
-    <Heading>{t(title)}</Heading>
-    <Intro>{t(content)}</Intro>
+    <Heading data-reveal>{t(title)}</Heading>
+    <Intro data-reveal style={revealDelay(100)}>{t(content)}</Intro>
     <Grid>
-      {items.map((item) => (
-        <Card key={item.redirect} to={`/${item.redirect}`}>
-          <Photo src={imagePath(item.icon)} alt="" loading="lazy" />
+      {items.map((item, i) => (
+        <Card key={item.redirect} to={`/${item.redirect}`} data-reveal style={revealDelay(i * 140)}>
+          <PhotoFrame>
+            <Photo src={imagePath(item.icon)} alt="" loading="lazy" />
+          </PhotoFrame>
           <CardTitle>{t(item.title)}</CardTitle>
           <CardText>{t(item.text)}</CardText>
           <MoreLink>{t("ShowMore")}</MoreLink>

@@ -1,5 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { colors, fonts } from "../../styles/colors";
+import { ease, float, lift, spin } from "../../styles/motion";
+
+// Photos and seal pop in one after another, then drift gently so the hero feels alive.
+const popIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
 
 export const HeroSection = styled("section")`
   position: relative;
@@ -84,7 +97,7 @@ export const BookLink = styled("a")`
   border: 1px solid ${colors.pink};
   color: ${colors.white};
   font-weight: 500;
-  transition: background-color 0.2s ease-in-out;
+  ${lift}
 
   &:hover {
     background: ${colors.pinkHover};
@@ -163,6 +176,7 @@ export const MainPhoto = styled("img")`
   object-position: 62% 40%;
   border-radius: 50%;
   border: 8px solid ${colors.white};
+  animation: ${popIn} 1.1s ${ease} 0.15s both, ${float} 9s ease-in-out 1.3s infinite;
 `;
 
 export const SecondaryPhoto = styled("img")`
@@ -174,6 +188,7 @@ export const SecondaryPhoto = styled("img")`
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid ${colors.white};
+  animation: ${popIn} 1.1s ${ease} 0.45s both, ${float} 7s ease-in-out 1.6s infinite reverse;
 `;
 
 export const Seal = styled("svg")`
@@ -182,6 +197,7 @@ export const Seal = styled("svg")`
   bottom: 0;
   width: 30%;
   height: auto;
+  animation: ${popIn} 1s ${ease} 0.75s both;
 
   circle {
     fill: ${colors.white};
@@ -192,6 +208,8 @@ export const Seal = styled("svg")`
     font-size: 14px;
     font-weight: 500;
     fill: ${colors.pink};
+    transform-origin: 100px 100px;
+    animation: ${spin} 40s linear infinite;
   }
 
   .leaf {

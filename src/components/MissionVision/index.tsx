@@ -1,5 +1,6 @@
 import { withTranslation, TFunction } from "react-i18next";
 import { imagePath } from "../../common/SvgIcon";
+import { revealDelay } from "../../common/Reveal";
 import {
   Section,
   ArchPhoto,
@@ -27,12 +28,12 @@ interface MissionVisionProps {
 
 const MissionVision = ({ icon, title, content, items, id, t }: MissionVisionProps) => (
   <Section id={id}>
-    <ArchPhoto src={imagePath(icon)} alt="" loading="lazy" />
+    <ArchPhoto src={imagePath(icon)} alt="" loading="lazy" data-reveal="left" />
     <Text>
-      {title && <Lead>{t(title)}</Lead>}
-      {content && <LeadText>{t(content)}</LeadText>}
-      {items.map((item) => (
-        <Statement key={item.title}>
+      {title && <Lead data-reveal>{t(title)}</Lead>}
+      {content && <LeadText data-reveal style={revealDelay(100)}>{t(content)}</LeadText>}
+      {items.map((item, i) => (
+        <Statement key={item.title} data-reveal style={revealDelay(200 + i * 140)}>
           <Heading>{t(item.title)}</Heading>
           <Para>{t(item.text)}</Para>
         </Statement>

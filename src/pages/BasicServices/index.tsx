@@ -1,131 +1,47 @@
 import { lazy } from "react";
-import IntroContent from "../../content/IntroContent.json";
-import DescriptionContent from "../../content/DescriptionContent.json";
-import BasicServiceContent from "../../content/BasicServiceContent.json";
-import MissionContent from "../../content/MisionContent.json";
-import VisionContent from "../../content/VisionContent.json";
+import PageIntro, { GroupHeading } from "../../components/PageIntro";
+import ServiceBlock from "../../components/ServiceBlock";
+import GroupNav from "../../components/GroupNav";
 
-import SpecialServiceContent from "../../content/SpecialServiceContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
-import VisitContent from "../../content/visitContent.json";
-
-import VisitBlock from "../../components/VisitBlock";
-import IntroContentBlock from "../../components/IntroContentBlock";
-import ContentBlockReverse from "../../components/ContentBlockReverse";
-
-const Contact = lazy(() => import("../../components/ContactForm"));
-const DesciptionBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
-const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
-const BasicServices = () => {
-  return (
-    <Container>
-      <ScrollToTop />
-      
+const FACIALS = [
+  { title: "titleHydraulicFacialContent", content: "titleHydraulicFacialContentText", icon: "facialH.png", id: "HydraulicFacial" },
+  { title: "titlecleanFacialContent", content: "titlecleanFacialContentText", icon: "facialC.png", id: "cleanFacial" },
+  { title: "titleSpecialFacialDermapenContent", content: "titleSpecialFacialDermapenContentText", icon: "facialDermapen.png", id: "SpecialFacialDermapen" },
+  { title: "titleSpecialFacialRadioFContent", content: "titleSpecialFacialRadioFContentText", icon: "facialRF.png", id: "SpecialFacialRadioF" },
+  { title: "titleDespigmentFacialContent", content: "titleDespigmentFacialContentText", icon: "facialDespig.jpg", id: "DespigmentFacial" },
+  { title: "titleAcneFacialContent", content: "titleAcneFacialContentText", icon: "facialAcne.png", id: "AcneFacial" },
+  { title: "titleDermaplaningFacialContent", content: "titleDermaplaningFacialContentText", icon: "dermaplaning.png", id: "DermaplaningFacial" },
+];
 
-      <DesciptionBlock
-        title="titleBasicServiceContent2"
-        content="titleBasicServiceContentText2"
-      />
-      
-      <ContentBlock
-        direction="left"
-        title="titleHydraulicFacialContent"
-        content="titleHydraulicFacialContentText"
-        icon="facialH.png"
-        id="HydraulicFacial"
-      />
+const MASSAGES = [
+  { title: "titlerelaxMassageContent", content: "titlerelaxMassageContentText", icon: "massageRelaxing.png", id: "relaxMassage" },
+  { title: "titleDescMassageContent", content: "titleDescMassageContentText", icon: "massageDesco.png", id: "descMassage" },
+  { title: "titleReductMassageContent", content: "titleReductMassageContentText", icon: "massageReduce.png", id: "reductMassage" },
+  { title: "titleLNMassageContent", content: "titleLNMassageContentText", icon: "massageDL.png", id: "LNMassage" },
+];
 
-      <ContentBlock
-        direction="right"
-        title="titlecleanFacialContent"
-        content="titlecleanFacialContentText"
-        icon="facialC.png"
-        id="cleanFacial"
-      />
+const GROUPS = [
+  { id: "facials", label: "facialsGroup" },
+  { id: "massage", label: "massagesGroup" },
+];
 
-      <ContentBlock
-        direction="left"
-        title="titleSpecialFacialDermapenContent"
-        content="titleSpecialFacialDermapenContentText"
-        icon="facialDermapen.png"
-        id="SpecialFacialDermapen"
-      />
-
-      <ContentBlock
-        direction="right"
-        title="titleSpecialFacialRadioFContent"
-        content="titleSpecialFacialRadioFContentText"
-        icon="facialRF.png"
-        id="SpecialFacialRadioF"
-      />
-
-      <ContentBlock
-        direction="left"
-        title="titleDespigmentFacialContent"
-        content="titleDespigmentFacialContentText"
-        icon="facialDespig.jpg"
-        id="DespigmentFacial"
-      />
-
-      <ContentBlock
-        direction="right"
-        title="titleAcneFacialContent"
-        content="titleAcneFacialContentText"
-        icon="facialAcne.png"
-        id="AcneFacial"
-      />
-
-      <ContentBlock
-        direction="left"
-        title="titleDermaplaningFacialContent"
-        content="titleDermaplaningFacialContentText"
-        icon="dermaplaning.png"
-        id="DermaplaningFacial"
-      />
-
-      <hr id="massage"/>
-      
-
-
-      <ContentBlockReverse
-        direction="right"
-        title="titlerelaxMassageContent"
-        content="titlerelaxMassageContentText"
-        icon="massageRelaxing.png"
-        id="relaxMassage"
-      />
-
-
-      <ContentBlockReverse
-        direction="left"
-        title="titleDescMassageContent"
-        content="titleDescMassageContentText"
-        icon="massageDesco.png"
-        id="descMassage"
-      />
-      
-      <ContentBlockReverse
-        direction="right"
-        title="titleReductMassageContent"
-        content="titleReductMassageContentText"
-        icon="massageReduce.png"
-        id="reductMassage"
-      />
-      
-      <ContentBlockReverse
-        direction="left"
-        title="titleLNMassageContent"
-        content="titleLNMassageContentText"
-        icon="massageDL.png"
-        id="LNMassage"
-      />
-      
-    </Container>
-  );
-};
+const BasicServices = () => (
+  <Container>
+    <ScrollToTop />
+    <PageIntro title="titleBasicServiceContent2" content="titleBasicServiceContentText2" />
+    <GroupNav groups={GROUPS} />
+    <GroupHeading title="facialsGroup" id="facials" count={FACIALS.length} />
+    {FACIALS.map((facial, i) => (
+      <ServiceBlock key={facial.id} {...facial} index={i + 1} />
+    ))}
+    <GroupHeading title="massagesGroup" id="massage" count={MASSAGES.length} />
+    {MASSAGES.map((massage, i) => (
+      <ServiceBlock key={massage.id} {...massage} index={i + 1} />
+    ))}
+  </Container>
+);
 
 export default BasicServices;

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 import { colors, fonts } from "../../styles/colors";
+import { lift } from "../../styles/motion";
 
 export const HeaderSection = styled("header")<{ $scrolled?: boolean }>`
   position: sticky;
@@ -125,7 +126,7 @@ export const BookLink = styled("a")`
   color: ${colors.white};
   font-weight: 500;
   white-space: nowrap;
-  transition: background-color 0.2s ease-in-out;
+  ${lift}
 
   &:hover {
     background: ${colors.pinkHover};

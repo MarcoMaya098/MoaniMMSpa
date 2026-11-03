@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
+import { lift } from "../../styles/motion";
 
 export const ContentSection = styled("section")`
   position: relative;
@@ -90,7 +91,7 @@ export const DirectionsLink = styled("a")`
   border: 1px solid ${colors.pink};
   color: ${colors.navy};
   font-weight: 500;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  ${lift}
 
   &:hover {
     background: ${colors.pink};

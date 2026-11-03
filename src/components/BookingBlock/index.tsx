@@ -1,5 +1,6 @@
 import { withTranslation, TFunction } from "react-i18next";
 import { imagePath } from "../../common/SvgIcon";
+import { revealDelay } from "../../common/Reveal";
 import { PHONE_LABEL, PHONE_URL, WHATSAPP_URL } from "../../common/contact";
 import {
   Section,
@@ -23,13 +24,15 @@ interface BookingBlockProps {
 
 const BookingBlock = ({ icon, id, t }: BookingBlockProps) => (
   <Section id={id}>
-    <Photo src={imagePath(icon)} alt="" loading="lazy" />
-    <Panel>
+    <Photo src={imagePath(icon)} alt="" loading="lazy" data-reveal="left" />
+    <Panel data-reveal="right" style={revealDelay(120)}>
       <Heading>{t("bookTitle")}</Heading>
       <Para>{t("bookText")}</Para>
       <Steps>
-        {STEPS.map((step) => (
-          <li key={step}>{t(step)}</li>
+        {STEPS.map((step, i) => (
+          <li key={step} data-reveal style={revealDelay(400 + i * 120)}>
+            {t(step)}
+          </li>
         ))}
       </Steps>
       <Actions>

@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 import Mandala from "../Mandala";
 import { colors } from "../../styles/colors";
+import { spin } from "../../styles/motion";
 
 // Pastel page background with flower ornaments peeking in from the side margins.
 // The ornament layer clips itself, so the page wrapper needs no overflow rule
@@ -27,6 +28,7 @@ const Flower = styled(Mandala)<{ $top: string; $side: "left" | "right"; $size: n
   ${(p) => p.$side}: ${(p) => -p.$size / 2}px;
   width: ${(p) => p.$size}px;
   height: ${(p) => p.$size}px;
+  animation: ${spin} 120s linear infinite ${(p) => (p.$side === "left" ? "normal" : "reverse")};
 
   @media only screen and (max-width: 768px) {
     ${(p) => p.$side}: ${(p) => -p.$size * 0.36}px;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { colors } from "../../styles/colors";
+import { ease } from "../../styles/motion";
 
 export const Section = styled("section")`
   padding: 4rem 0 5rem;
@@ -36,15 +37,28 @@ export const Card = styled(Link)`
   }
 `;
 
-export const Photo = styled("img")`
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+export const PhotoFrame = styled("div")`
+  overflow: hidden;
   border-radius: 4px;
   margin-bottom: 1.25rem;
+  aspect-ratio: 4 / 5;
 
   @media only screen and (max-width: 890px) {
     aspect-ratio: 4 / 3;
+  }
+`;
+
+export const Photo = styled("img")`
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.9s ${ease};
+
+  ${Card}:hover &,
+  ${Card}:focus-visible & {
+    transform: scale(1.06);
   }
 `;
 
@@ -73,9 +87,22 @@ export const MoreLink = styled("span")`
   color: ${colors.navy};
   padding-bottom: 2px;
   border-bottom: 1px solid ${colors.pink};
+  transition: color 0.25s ease;
+
+  &::after {
+    content: "→";
+    display: inline-block;
+    margin-left: 0.4rem;
+    transition: transform 0.35s ${ease};
+  }
 
   ${Card}:hover &,
   ${Card}:focus-visible & {
     color: ${colors.pink};
+  }
+
+  ${Card}:hover &::after,
+  ${Card}:focus-visible &::after {
+    transform: translateX(4px);
   }
 `;
